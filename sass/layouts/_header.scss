@@ -1,0 +1,13 @@
+.header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    border-bottom: 3px solid green;
+    h1{
+        color: green;
+        font-family: sans-serif;
+        font-size: 3rem;
+    }
+}
