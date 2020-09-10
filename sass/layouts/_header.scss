@@ -1,13 +1,17 @@
 .header{
-    height: 100px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
-    border-bottom: 3px solid green;
+    background-color:$color-bar;
+    border-bottom: 3px solid #76ad3e;
+    
+
     h1{
-        color: green;
-        font-family: sans-serif;
-        font-size: 3rem;
+        color:$color-bar-font;
+        font-family: 'Montserrat', serif;
+        font-size: 5rem;
+    
+        text-align: center;
     }
 }
