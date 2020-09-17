@@ -1,3 +1,29 @@
+@charset "UTF-8";
+/*
+$breakpoints: (
+  mobile: 599px
+);
+@mixin mobile-only {
+  @media screen and (max-width: map-get($breakpoints, mobile)){
+      grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px)
+main-suggestions__card{
+    justify-content: space-around;
+    width: 60%;
+    height: 1200px;
+    padding-bottom: 60px;
+}
+@media screen and (min-width: 768px)
+main-suggestions__card {
+    width: 90%;
+}
+.card-enchantee {
+    background-color: #fcdfdb;
+    color: #3c1218;
+}*/
 * {
   margin: 0;
   padding: 0;
@@ -46,202 +72,6 @@ body {
   color: #FEC85F;
   font-family: "Montserrat", serif;
   font-size: 5rem;
-  text-align: center;
-}
-
-main {
-  margin: auto 8% 5.5rem auto;
-}
-main .menu .menu__footer__logo {
-  font-size: 9rem;
-  background: -webkit-gradient(linear, left top, right top, from(#f15c61), to(#f6916a));
-  background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
-}
-
-.restaurant {
-  width: 1300px;
-  display: flex;
-  flex-flow: wrap;
-}
-.restaurant__card {
-  height: 700px;
-  width: 45%;
-  border: 1px solid #b4a7a7;
-  margin: 1%;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  background: #fcdfdb;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.247);
-  overflow: hidden;
-  text-align: center;
-  margin: 20px 20px;
-}
-.restaurant__card p {
-  font-family: "Dancing Script", cursive;
-  font-style: italic;
-  position: relative;
-  padding: 0.2rem;
-  font-size: 40px;
-  mix-blend-mode: multiply;
-  color: #3d1319;
-  text-align: center;
-}
-.restaurant__card h3 {
-  font-family: "Handlee", cursive, sans-serif;
-  color: #3d1319;
-  font-size: 40px;
-}
-
-.last- .restaurant__card:hover .main__card {
-  transform: scale(1.2);
-  opacity: 0.3;
-}
-
-.main-suggestions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.main-suggestions > h2 {
-  font-style: "Dancing Script", cursive;
-  padding: 40px 0;
-  font-size: 2rem;
-}
-.main-suggestions__card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
-  padding: 30px 10em;
-  box-shadow: 2em;
-  text-align: center;
-}
-.main-suggestions__card__step {
-  margin: 25px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.main-suggestions__card__step__title {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-.main-suggestions__card__step__dishes p {
-  margin-bottom: 8px;
-  font-size: 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main-suggestions__card__step .price {
-  margin-top: 4px;
-  font-weight: bold;
-}
-
-.card-enchantee {
-  background-color: #fcdfdb;
-  color: #220602;
-  width: 100%;
-}
-
-.fa-music {
-  font-size: 8rem;
-  background: -webkit-gradient(linear, left top, right top, from(#f15c61), to(#f6916a));
-  background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.top-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.top-title .music-icon {
-  font-size: 2.5rem;
-}
-.top-title h2 {
-  font-style: "Dancing Script", cursive;
-  font-size: 2.5rem;
-}
-
-.last-title .music-icon {
-  font-size: 2rem;
-}
-.last-title__title {
-  font-family: "Dancing Script", cursive;
-  font-size: 2rem;
-}
-
-.main-suggestions__card__step {
-  font-family: "Handlee", cursive, sans-serif;
-}
-
-.main-suggestions__card__step__dishes {
-  font-family: "Handlee", cursive, sans-serif;
-}
-
-.main-suggestions__card__step {
-  width: 96%;
-}
-
-/*@media screen and (min-width: 1200px)
-main-suggestions__card{
-    justify-content: space-around;
-    width: 60%;
-    height: 1200px;
-    padding-bottom: 60px;
-}
-@media screen and (min-width: 768px)
-main-suggestions__card {
-    width: 90%;
-}
-.card-enchantee {
-    background-color: #fcdfdb;
-    color: #3c1218;
-}*/
-.card-enchantee .main-suggestions__card__step__title span {
-  background-color: #181616;
-}
-
-.card-enchantee .main-suggestions__card__step h3::after {
-  background: #111111;
-}
-
-.main-suggestions__card__step__title {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.main-suggestions__card__step__title h3::after {
-  content: "";
-  display: block;
-  height: 4px;
-  width: 0;
-  transition: width 0.5s ease-in-out;
-}
-
-.main-suggestions__card__step__title h3:hover::after {
-  width: 100%;
-}
-
-.main-suggestions__card__step__title .side-line {
-  display: block;
-  width: 30%;
-  height: 4px;
-}
-
-.main-suggestions__card__step__dishes p {
-  font-size: 1.6rem;
   text-align: center;
 }
 
@@ -454,6 +284,212 @@ main-suggestions__card {
 .footer__legal-notice:hover {
   -webkit-animation: wiggle 5s ease-in;
   animation: wiggle 5s ease-in;
+}
+
+main {
+  margin: auto 8% 5.5rem auto;
+}
+main .menu .menu__footer__logo {
+  font-size: 9rem;
+  background: -webkit-gradient(linear, left top, right top, from(#f15c61), to(#f6916a));
+  background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
+}
+
+.restaurant {
+  width: 1300px;
+  display: flex;
+  flex-flow: wrap;
+}
+.restaurant__card {
+  height: 700px;
+  width: 45%;
+  border: 1px solid #b4a7a7;
+  margin: 1%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  background: #fcdfdb;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.247);
+  overflow: hidden;
+  text-align: center;
+  margin: 20px 20px;
+}
+.restaurant__card p {
+  font-family: "Dancing Script", cursive;
+  font-style: italic;
+  position: relative;
+  padding: 0.2rem;
+  font-size: 40px;
+  mix-blend-mode: multiply;
+  color: #3d1319;
+  text-align: center;
+}
+.restaurant__card h3 {
+  font-family: "Handlee", cursive, sans-serif;
+  color: #3d1319;
+  font-size: 40px;
+}
+
+.restaurant__card:hover .main__card {
+  transform: scale(1.2);
+  opacity: 0.3;
+}
+
+.main-suggestions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-suggestions > h2 {
+  font-style: "Dancing Script", cursive;
+  padding: 40px 0;
+  font-size: 2rem;
+}
+.main-suggestions__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 30px 12em;
+  box-shadow: 2em;
+  text-align: center;
+}
+.main-suggestions__card__step {
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-suggestions__card__step__title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.main-suggestions__card__step__dishes p {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-suggestions__card__step .price {
+  margin-top: 4px;
+  font-weight: bold;
+}
+
+.card-enchantee {
+  background-color: #fcdfdb;
+  color: #220602;
+  width: 100%;
+}
+
+.fa-music {
+  font-size: 8rem;
+  background: -webkit-gradient(linear, left top, right top, from(#f15c61), to(#f6916a));
+  background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.top-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-title .music-icon {
+  font-size: 2.5rem;
+}
+.top-title h2 {
+  font-style: "Dancing Script", cursive;
+  font-size: 2.5rem;
+}
+
+.last-title .music-icon {
+  font-size: 2rem;
+}
+.last-title__title {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+}
+
+.main-suggestions__card__step {
+  font-family: "Handlee", cursive, sans-serif;
+}
+
+.main-suggestions__card__step__dishes {
+  font-family: "Handlee", cursive, sans-serif;
+}
+
+.card-chic {
+  background-color: #fff5fe;
+  color: #c77412;
+}
+
+.main-suggestions__card {
+  width: 96%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 30px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.247);
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .main-suggestions__card {
+    justify-content: space-around;
+    width: 60%;
+    height: 1200px;
+    padding-bottom: 60px;
+  }
+}
+
+.main-suggestions__card__step {
+  width: 96%;
+}
+
+.card-enchantee .main-suggestions__card__step__title span {
+  background-color: #181616;
+}
+
+.card-enchantee .main-suggestions__card__step h3::after {
+  background: #111111;
+}
+
+.main-suggestions__card__step__title {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main-suggestions__card__step__title h3::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+.main-suggestions__card__step__title h3:hover::after {
+  width: 100%;
+}
+
+.main-suggestions__card__step__title .side-line {
+  display: block;
+  width: 30%;
+  height: 4px;
+}
+
+.main-suggestions__card__step__dishes p {
+  font-size: 1.6rem;
+  text-align: center;
+  text-align: start;
 }
 
 /*# sourceMappingURL=style.css.map */
