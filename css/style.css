@@ -75,29 +75,29 @@ body {
   text-align: center;
 }
 
+.restaurant__card:hover .main__card {
+  transform: scale(1.2);
+  opacity: 0.3;
+}
+
 .soon {
-  display: flex;
   font-size: 1.6em;
   justify-content: center;
-  margin: 1em 0 1em 14em;
-  border-radius: 0.2em;
-  padding: 5px 24px;
+  margin: auto;
+  border-radius: 1em;
+  padding: 1% 2%;
   color: #FEC85F;
   background: #579C87;
+  width: 25%;
 }
 
 /*****/
-.ball-loader {
-  border-radius: 5%/24%;
-  padding: 1%;
-}
-
-.ball-loader {
+.soon__ball-loader {
   width: 100px;
-  height: 23.3333333333px;
+  height: 50%;
   position: absolute;
   top: 50%;
-  left: 134%;
+  left: 80%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
@@ -279,7 +279,6 @@ body {
   position: relative;
 }
 
-.soon:hover,
 .footer__contact:hover,
 .footer__legal-notice:hover {
   -webkit-animation: wiggle 5s ease-in;
@@ -287,7 +286,7 @@ body {
 }
 
 main {
-  margin: auto 8% 5.5rem auto;
+  margin: auto auto 5.5rem auto;
 }
 main .menu .menu__footer__logo {
   font-size: 9rem;
@@ -296,9 +295,10 @@ main .menu .menu__footer__logo {
 }
 
 .restaurant {
-  width: 1300px;
+  width: 1200px;
   display: flex;
   flex-flow: wrap;
+  justify-content: space-around;
 }
 .restaurant__card {
   height: 700px;
@@ -332,11 +332,6 @@ main .menu .menu__footer__logo {
   font-family: "Handlee", cursive, sans-serif;
   color: #3d1319;
   font-size: 40px;
-}
-
-.restaurant__card:hover .main__card {
-  transform: scale(1.2);
-  opacity: 0.3;
 }
 
 .main-suggestions {
@@ -447,10 +442,61 @@ main .menu .menu__footer__logo {
   }
 }
 
-.main-suggestions__card__step {
-  width: 96%;
-}
+/*@media
 
+
+    @media screen and (min-width:768px){
+      .main{
+          &__card{
+              width: 80%;
+              height: 700px;
+              margin-top: 40px;
+          }
+                  h3{
+                      font-size: 3rem;
+                  }
+                  p{
+                      font-size: 3rem;
+                  }
+              }
+
+          }
+
+      .soon{
+          margin-bottom: 155px;
+          h2{
+              font-size: 2.5rem;
+              span{
+                  font-size: 0.75rem;
+              }
+          }
+      }
+
+
+  @media screen and (min-width:1200px){
+      .main{
+          padding: 0 3rem;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          &__menu{
+              width: 44%;
+              height: 750px;
+              &__content{
+                  width: 70%;
+              }
+          }
+      }
+      .main__card--chic{
+          p{
+              font-size: 2.1rem;
+          }
+      }
+  }
+    .main-suggestions__card__step{
+    width: 96%;
+}
+   */
 .card-enchantee .main-suggestions__card__step__title span {
   background-color: #181616;
 }
