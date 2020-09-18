@@ -1,7 +1,7 @@
 .restaurant__card:hover .main__card {
   transform: scale(1.2);
   opacity: 0.3;
- 
+  transition: 0.2s ease;
 }
 
 

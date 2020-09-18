@@ -44,7 +44,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   background-color: #579C87;
-  border-top: 3px solid #a1c181;
+  border-top: 1px solid #a1c181;
   position: fixed;
   justify-content: space-between;
   bottom: 0;
@@ -66,7 +66,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #579C87;
-  border-bottom: 3px solid #76ad3e;
+  border-bottom: 1px solid #76ad3e;
 }
 .header h1 {
   color: #FEC85F;
@@ -78,6 +78,7 @@ body {
 .restaurant__card:hover .main__card {
   transform: scale(1.2);
   opacity: 0.3;
+  transition: 0.2s ease;
 }
 
 .soon {
