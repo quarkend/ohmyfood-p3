@@ -2,10 +2,44 @@
 
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/animations";
 @import "./fondations/base";
+@import "./fondations/typography";
 @import "./layouts/footer";
 @import "./layouts/header";
-@import "./layouts/animations";
 @import "./components/main-card";
+@import "./components/menu";
+@import "./components/card";
+@import "./components/container";
+@import "./components/_style-main";
 
 
+
+
+.soon {
+
+    display: flex;
+    font-size: 1.6em;
+    justify-content: center;
+    margin: 1em 0 1em 14em;
+    border-radius: 0.2em;
+    padding: 5px 24px;
+    color:$color-bar-font;
+    background:$color-bar;
+  }/*****/
+  
+
+  
+  .soon, 
+  .footer__contact,
+  .footer__legal-notice {
+    position: relative;
+  }
+  
+  .soon:hover,
+  .footer__contact:hover,
+  .footer__legal-notice:hover {
+    -webkit-animation: wiggle 5s ease-in;
+    animation: wiggle 5s ease-in;
+  }
+  

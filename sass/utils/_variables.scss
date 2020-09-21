@@ -2,6 +2,38 @@
  $color-bar-font : #FEC85F;
 $color-card : #7c2f3c;
 $color-bar :  #579C87;
-$body-bkg : rgb(255, 255, 255)
+$body-bkg : rgb(255, 255, 255);
+
+$menu-variations: (
+   enchantee: (
+    background-color: #FCDFDB,
+    text-color-p: #3d1319,
+    text-color-h3: #3d1319,
+    font-family-p: ('Dancing Script', cursive),
+    font-family-h3: ('Handlee', cursive, sans-serif),
+    font-size-p: 40px,
+    font-size-h3: 40px,
+    
+    //tu peux aussi imaginer entrer des couleurs pour faire les dégradés par exemple....
+    
+  ),
+  chic: (
+    background-color: #4250ce,
+    text-color-p: #3d1319,
+    text-color-h3: #3d1319,
+    font-family-p: ('Dancing Script', cursive),
+    font-family-h3: ('Handlee', cursive, sans-serif),
+    font-size-p: 40px,
+    font-size-h3: 40px,
+  ),
+  //reste à créer les deux autres :p 
+);
+
+
+
 
 // Enchantee
+
+
+
+// Chic francais

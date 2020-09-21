@@ -1,0 +1,33 @@
+
+.menu {
+
+    //ajout de la boucle pour chaque modificateur spécifique à chaque menu
+    // la variable utilisée qui est une map est dans le fichier variables ! 
+    @each $modificateur-name,
+    $variation in $menu-variations {
+        &--#{$modificateur-name} {
+            
+            background-color: map-get($variation, background-color);
+
+            p {
+                font-family: map-get($variation, font-family-p);
+                font-size: map-get($variation, font-size-p);
+                color: map-get($variation, text-color-p);
+            }
+
+            h3 {
+                font-family: map-get($variation, font-family-h3);                
+                font-size: map-get($variation, font-size-h3);
+                color: map-get($variation, text-color-h3);
+            }
+        }
+    }
+
+
+    //code du style commun aux cover des menus 
+    &__cover {
+        width: 35%;
+        text-align: center;
+    }
+
+}

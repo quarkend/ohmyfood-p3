@@ -1,31 +1,18 @@
-.restaurant__card:hover .main__card {
-  transform: scale(1.2);
-  opacity: 0.3;
-  transition: 0.2s ease;
-}
-
-
-
-.soon {
-
-    
-    font-size: 1.6em;
-    justify-content: center;
-    margin: auto;
-    border-radius: 1em;
-    padding: 1% 2%;
-    color:$color-bar-font;
-    background:$color-bar;
-    width: 25%;
-  }/*****/
-
+.menu__cover:hover a {
+    transform: scale(1.2);
+    transition: transform 0.6s ease-in-out;
+    opacity: 0.3;
+  }
   
-  .soon__ball-loader {
+
+  .ball-loader {
+    border-radius: 5% / 24%;
+    padding: 1%;
     width: 100px;
-    height: 50%;
+    height: 23.3333333333px;
     position: absolute;
     top: 50%;
-    left: 80%;
+    left: 134%;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
   }
@@ -142,11 +129,7 @@
       left: 0
     }
   }
-  
-  
-  
-  
-  
+   
   
   
   
@@ -246,18 +229,4 @@
     }
   }
   
-  
-  
-  .soon,
-  .footer__contact,
-  .footer__legal-notice {
-    position: relative;
-  }
-  
- 
-  .footer__contact:hover,
-  .footer__legal-notice:hover {
-    -webkit-animation: wiggle 5s ease-in;
-    animation: wiggle 5s ease-in;
-  }
   

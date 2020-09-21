@@ -4,7 +4,10 @@
     justify-content: center;
     align-items: center;
     background-color:$color-bar;
-    border-bottom: 1px solid #76ad3e;
+    border-bottom: 3px solid #76ad3e;
+    
+    //add space between header and main body
+    margin-bottom: 60px;
     
 
     h1{
