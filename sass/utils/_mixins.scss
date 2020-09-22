@@ -1,5 +1,11 @@
-// Zoom au passage de la sourie
+// Text gradient
+@mixin gradient-text($deg, $color1, $color2, $color3){
+ 
+  background: -webkit-linear-gradient($deg, $color1, $color2, $color3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-@mixin hoverscale{
-    transform:scalex(1.2);
-  }
+@mixin gradiant-text($deg, $color3,$color4, $color5 ){
+  background: -webkit-linear-gradient();
+}

@@ -1,5 +1,79 @@
 
 
+.menu--chic{
+    background-color: #fff5fe;
+    color: #c77412;
+  p{
+      span{
+          font-size: 1.2rem;
+      }
+  }
+  .top-title{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2{
+          padding-bottom: 20px;
+          font-family:  sans-serif;
+          font-size: 2rem;
+          @include gradient-text(25deg, $chic-gradient-color1, $chic-gradient-color2, $chic-gradient-color3);
+      }
+  }
+  .menu__cover__card__step{
+      font-family: sans-serif;
+      h3{
+          font-size: 1.4rem;
+      }
+      &:nth-child(2){
+          .menu__cover__card__step__title{
+              span{
+                  background-color: $chic-gradient-color1;
+              }
+              h3{
+                  color: $chic-gradient-color1;
+                  &::after{
+                      background-color: $chic-gradient-color1;
+                  }
+              }
+          }
+          .menu__cover__card__step__dishes{
+              color: $chic-gradient-color1;
+          }
+      }
+      &:nth-child(3){
+          .main-offers__menu__step__title{
+              span{
+                  background-color: $chic-gradient-color2;
+              }
+              h3{
+                  color: $chic-gradient-color2;
+                  &::after{
+                      background-color: $chic-gradient-color2;
+                  }
+              }
+          }
+          .menu__cover__card__step__dishes{
+              color: $chic-gradient-color2;
+          }
+      } 
+      &:nth-child(4){
+          .main-offers__menu__step__title{
+              span{
+                  background-color: $chic-gradient-color3;
+              }
+              h3{
+                  color: $chic-gradient-color3;
+                  &::after{
+                      background-color: $chic-gradient-color3;
+                  }
+              }
+          }
+          .menu__cover__card__step__dishes{
+              color: $chic-gradient-color3;
+          }
+      }   
+  } 
+}
 
 // **********
 

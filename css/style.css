@@ -234,6 +234,69 @@ a {
   text-align: center;
 }
 
+.menu--chic {
+  background-color: #fff5fe;
+  color: #c77412;
+}
+.menu--chic p span {
+  font-size: 1.2rem;
+}
+.menu--chic .top-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu--chic .top-title h2 {
+  padding-bottom: 20px;
+  font-family: sans-serif;
+  font-size: 2rem;
+  background: -webkit-linear-gradient(25deg, #c77412, #ac6baf, #934af8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu--chic .menu__cover__card__step {
+  font-family: sans-serif;
+}
+.menu--chic .menu__cover__card__step h3 {
+  font-size: 1.4rem;
+}
+.menu--chic .menu__cover__card__step:nth-child(2) .menu__cover__card__step__title span {
+  background-color: #c77412;
+}
+.menu--chic .menu__cover__card__step:nth-child(2) .menu__cover__card__step__title h3 {
+  color: #c77412;
+}
+.menu--chic .menu__cover__card__step:nth-child(2) .menu__cover__card__step__title h3::after {
+  background-color: #c77412;
+}
+.menu--chic .menu__cover__card__step:nth-child(2) .menu__cover__card__step__dishes {
+  color: #c77412;
+}
+.menu--chic .menu__cover__card__step:nth-child(3) .main-offers__menu__step__title span {
+  background-color: #ac6baf;
+}
+.menu--chic .menu__cover__card__step:nth-child(3) .main-offers__menu__step__title h3 {
+  color: #ac6baf;
+}
+.menu--chic .menu__cover__card__step:nth-child(3) .main-offers__menu__step__title h3::after {
+  background-color: #ac6baf;
+}
+.menu--chic .menu__cover__card__step:nth-child(3) .menu__cover__card__step__dishes {
+  color: #ac6baf;
+}
+.menu--chic .menu__cover__card__step:nth-child(4) .main-offers__menu__step__title span {
+  background-color: #934af8;
+}
+.menu--chic .menu__cover__card__step:nth-child(4) .main-offers__menu__step__title h3 {
+  color: #934af8;
+}
+.menu--chic .menu__cover__card__step:nth-child(4) .main-offers__menu__step__title h3::after {
+  background-color: #934af8;
+}
+.menu--chic .menu__cover__card__step:nth-child(4) .menu__cover__card__step__dishes {
+  color: #934af8;
+}
+
 .fa-music {
   font-size: 8rem;
   background: -webkit-gradient(linear, left top, right top, from(#f15c61), to(#f6916a));
