@@ -234,53 +234,6 @@ a {
   text-align: center;
 }
 
-.main-suggestions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.main-suggestions > h2 {
-  font-style: "Dancing Script", cursive;
-  padding: 40px 0;
-  font-size: 2rem;
-}
-.main-suggestions__card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
-  padding: 30px 10em;
-  box-shadow: 2em;
-  text-align: center;
-}
-.main-suggestions__card__step {
-  margin: 25px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.main-suggestions__card__step__title {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-.main-suggestions__card__step__dishes p {
-  margin-bottom: 8px;
-  font-size: 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main-suggestions__card__step .price {
-  margin-top: 4px;
-  font-weight: bold;
-}
-
-.card-enchantee {
-  background-color: #fcdfdb;
-  color: #220602;
-  width: 100%;
-}
-
 .fa-music {
   font-size: 8rem;
   background: -webkit-gradient(linear, left top, right top, from(#f15c61), to(#f6916a));
@@ -310,11 +263,11 @@ a {
   font-size: 2rem;
 }
 
-.main-suggestions__card__step {
+.menu__cover__card__step {
   font-family: "Handlee", cursive, sans-serif;
 }
 
-.main-suggestions__card__step__dishes {
+.menu__cover__card__step__dishes {
   font-family: "Handlee", cursive, sans-serif;
 }
 
@@ -332,14 +285,40 @@ a {
   color: #3d1319;
 }
 .menu--chic {
-  background-color: #4250ce;
+  background-color: linear-gradient(to right, #c67412 0%, #6e4ccc 100%);
 }
 .menu--chic p {
   font-family: "Dancing Script", cursive;
   font-size: 40px;
-  color: #3d1319;
+  color: linear-gradient(to right, #c67412 0%, #6e4ccc 100%);
 }
 .menu--chic h3 {
+  font-family: "Handlee", cursive, sans-serif;
+  font-size: 1em;
+  color: #3d1319;
+}
+.menu--delice-papilles {
+  background-color: #edefef;
+}
+.menu--delice-papilles p {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  color: #3d1319;
+}
+.menu--delice-papilles h3 {
+  font-family: "Handlee", cursive, sans-serif;
+  font-size: 40px;
+  color: #3d1319;
+}
+.menu--palette-gout {
+  background-color: #fff5fe;
+}
+.menu--palette-gout p {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  color: #3d1319;
+}
+.menu--palette-gout h3 {
   font-family: "Handlee", cursive, sans-serif;
   font-size: 40px;
   color: #3d1319;
@@ -348,7 +327,131 @@ a {
   width: 35%;
   text-align: center;
 }
+.menu__cover__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 30px 12em;
+  box-shadow: 2em;
+  text-align: center;
+}
+.menu__cover__card__step {
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu__cover__card__step__title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.menu__cover__card__step__dishes p {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__cover__card__step .price {
+  margin-top: 4px;
+  font-weight: bold;
+}
 
+/*
+    @media screen and (min-width: 768px){
+       .menu__cover{
+            >h2{
+                font-size: 2.5rem;
+            }
+            padding-bottom: 100px;
+            &__card{
+                width: 90%;
+                &__step{
+                    width: 90%;
+                    &__title{
+                        position: relative;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 20px;
+                        h3::after{
+                            content: '';
+                            display: block;
+                            height: 4px;
+                            width: 0;
+                            transition: width .5s ease-in-out;
+                        }
+                        h3:hover::after{
+                            width: 100%;
+                        }
+                        .side-bar{
+                            display: block;
+                            width: 30%;
+                            height: 4px;
+                        }
+                    }
+                    &__dishes{
+                        p{
+                            font-size: 1.6rem;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px){
+        .menu__cover{
+            >h2{
+                font-size: 4rem;
+            }
+            &__card{
+                justify-content: space-around;
+                width: 60%;
+
+                &__step{
+                    &__dishes{
+                        width: 100%;
+                        p{
+                            width: 100%;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            text-align: start;
+                        }
+                    }
+                }
+            }
+        }
+        .menu--enchantee{
+            .top-title{
+                h2{
+                    font-size: 3rem;
+                }
+            }
+        }
+        .menu--enchantee,.menu--chic{
+            .top-title{
+                h2{
+                    font-size: 5rem;
+                }
+            }
+            .menu__cover__card__step{
+                &__dishes{
+                    padding: 0 8%;
+                    p{
+                        span{
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+*/
 .card {
   min-height: 500px;
   display: flex;
@@ -368,34 +471,23 @@ a {
   margin: auto;
 }
 
-.main-suggestions__card__step {
-  width: 96%;
-}
-
-/*@media screen and (min-width: 1200px)
-main-suggestions__card{
-    justify-content: space-around;
-    width: 60%;
-    height: 1200px;
-    padding-bottom: 60px;
-}
-@media screen and (min-width: 768px)
-main-suggestions__card {
-    width: 90%;
-}
-.card-enchantee {
-    background-color: #fcdfdb;
-    color: #3c1218;
-}*/
-.card-enchantee .main-suggestions__card__step__title span {
+.menu--enchantee .menu__cover__card__step__title span {
   background-color: #181616;
 }
 
-.card-enchantee .main-suggestions__card__step h3::after {
+.menu--enchantee .menu__cover__card__step h3::after {
   background: #111111;
 }
 
-.main-suggestions__card__step__title {
+.menu--chic .menu__cover__card__step__title span {
+  background-color: #181616;
+}
+
+.menu--chic .menu__cover__card__step h3::after {
+  background: #111111;
+}
+
+.menu__cover__card__step__title {
   position: relative;
   width: 100%;
   display: flex;
@@ -404,7 +496,7 @@ main-suggestions__card {
   margin-bottom: 20px;
 }
 
-.main-suggestions__card__step__title h3::after {
+.menu__cover__card__step__title h3::after {
   content: "";
   display: block;
   height: 4px;
@@ -412,17 +504,17 @@ main-suggestions__card {
   transition: width 0.5s ease-in-out;
 }
 
-.main-suggestions__card__step__title h3:hover::after {
+.menu__cover__card__step__title h3:hover::after {
   width: 100%;
 }
 
-.main-suggestions__card__step__title .side-line {
+.menu__cover__card__step__title .side-line {
   display: block;
   width: 30%;
   height: 4px;
 }
 
-.main-suggestions__card__step__dishes p {
+.menu__cover__card__step__dishes p {
   font-size: 1.6rem;
   text-align: center;
 }

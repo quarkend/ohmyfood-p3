@@ -4,63 +4,6 @@
 // **********
 
 
-.main-suggestions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  >h2 {
-    font-style: "Dancing Script", cursive;
-    padding: 40px 0;
-    font-size: 2rem;
-  }
-
-  &__card {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-    padding: 30px 10em;
-    box-shadow: 2em;
-    text-align: center;
-
-    &__step {
-      margin: 25px 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      &__title {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-
-      }
-
-      &__dishes p {
-        margin-bottom: 8px;
-        font-size: 1.2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .price {
-        margin-top: 4px;
-        font-weight: bold;
-      }
-    }
-  }
-}
-
-// ---------------------------------------------ENCHANTED---------------------------------------------------------------------
-.card-enchantee {
-  background-color: rgb(252, 223, 219);
-  color: rgb(34, 6, 2);
-  width: 100%;
-
-
-}
 
 .fa-music {
   font-size: 8rem;
@@ -96,8 +39,7 @@
     font-size: 2rem;
   }
 }
-
-.main-suggestions__card__step {
+.menu__cover__card__step {
   font-family: 'Handlee', cursive, sans-serif;
 
 
@@ -108,7 +50,6 @@
 
 
 
-
-.main-suggestions__card__step__dishes {
+.menu__cover__card__step__dishes {
   font-family: 'Handlee', cursive, sans-serif;
 }

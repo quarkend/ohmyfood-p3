@@ -1,3 +1,15 @@
 {
-    "compile-hero.disable-compile-files-on-did-save-code": true
+    
+        "name": " h m ",
+        "version": "1.0.0",
+        "description": " web portfolio",
+        "main": "index.js",
+        "scripts": {
+          "sass": "sass ./sass/main.scss:./Documents/Fichiers/Git/PremierProjet/ohmyfood-p3/css/style.css -w --style compressed",
+          "prefix": "postcss ./Documents/Fichiers/Git/PremierProjet/ohmyfood-p3/css/style.css --use autoprefixer -d ./Documents/Fichiers/Git/PremierProjet/ohmyfood-p3/css/prefixed/"
+        },
+        "author": "",
+        "license": "ISC",
+        "browserslist": "last 4 versions"
+    
 }

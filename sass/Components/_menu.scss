@@ -28,6 +28,136 @@
     &__cover {
         width: 35%;
         text-align: center;
-    }
+        &__card {
 
-}
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 30px 12em;
+            box-shadow: 2em;
+            text-align: center;
+ 
+            &__step {
+              margin: 25px 0;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+        
+              &__title {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+        
+              }
+        
+              &__dishes p {
+                margin-bottom: 8px;
+                font-size: 1.2rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              }
+        
+              .price {
+                margin-top: 4px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        
+    }
+    /*
+    @media screen and (min-width: 768px){
+       .menu__cover{
+            >h2{
+                font-size: 2.5rem;
+            }
+            padding-bottom: 100px;
+            &__card{
+                width: 90%;
+                &__step{
+                    width: 90%;
+                    &__title{
+                        position: relative;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 20px;
+                        h3::after{
+                            content: '';
+                            display: block;
+                            height: 4px;
+                            width: 0;
+                            transition: width .5s ease-in-out;
+                        }
+                        h3:hover::after{
+                            width: 100%;
+                        }
+                        .side-bar{
+                            display: block;
+                            width: 30%;
+                            height: 4px;
+                        }
+                    }
+                    &__dishes{
+                        p{
+                            font-size: 1.6rem;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media screen and (min-width: 1200px){
+        .menu__cover{
+            >h2{
+                font-size: 4rem;
+            }
+            &__card{
+                justify-content: space-around;
+                width: 60%;
+              
+                &__step{
+                    &__dishes{
+                        width: 100%;
+                        p{
+                            width: 100%;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            text-align: start;
+                        }
+                    }
+                }
+            }
+        }
+        .menu--enchantee{
+            .top-title{
+                h2{
+                    font-size: 3rem;
+                }
+            }
+        }
+        .menu--enchantee,.menu--chic{
+            .top-title{
+                h2{
+                    font-size: 5rem;
+                }
+            }
+            .menu__cover__card__step{
+                &__dishes{
+                    padding: 0 8%;
+                    p{
+                        span{
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+        
+*/

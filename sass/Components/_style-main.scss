@@ -1,32 +1,20 @@
 
-.main-suggestions__card__step{
-    width: 96%;
-}
-/*@media screen and (min-width: 1200px)
-main-suggestions__card{
-    justify-content: space-around;
-    width: 60%;
-    height: 1200px;
-    padding-bottom: 60px;
-}
-@media screen and (min-width: 768px)
-main-suggestions__card {
-    width: 90%;
-}
-.card-enchantee {
-    background-color: #fcdfdb;
-    color: #3c1218;
-}*/
 
 
- .card-enchantee .main-suggestions__card__step__title span {
+ .menu--enchantee .menu__cover__card__step__title span {
   background-color: #181616;
 }
-.card-enchantee .main-suggestions__card__step h3::after {
+.menu--enchantee .menu__cover__card__step h3::after {
   background: #111111;
 }
 
-  .main-suggestions__card__step__title {
+.menu--chic .menu__cover__card__step__title span {
+  background-color: #181616;
+}
+.menu--chic .menu__cover__card__step h3::after {
+  background: #111111;
+}
+  .menu__cover__card__step__title {
     position: relative;
     width: 100%;
     display: flex;
@@ -34,22 +22,22 @@ main-suggestions__card {
     align-items: center;
     margin-bottom: 20px;
   }
-  .main-suggestions__card__step__title h3::after {
+  .menu__cover__card__step__title h3::after {
     content: "";
     display: block;
     height: 4px;
     width: 0;
     transition: width 0.5s ease-in-out;
   }
-  .main-suggestions__card__step__title h3:hover::after {
+  .menu__cover__card__step__title h3:hover::after {
     width: 100%;
   }
-  .main-suggestions__card__step__title .side-line {
+  .menu__cover__card__step__title .side-line {
     display: block;
     width: 30%;
     height: 4px;
   }
-  .main-suggestions__card__step__dishes p {
+  .menu__cover__card__step__dishes p {
     font-size: 1.6rem;
     text-align: center;
   }
