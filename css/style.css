@@ -246,54 +246,46 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.menu--chic .top-title h2 {
-  padding-bottom: 20px;
-  font-family: sans-serif;
-  font-size: 2rem;
-  background: -webkit-linear-gradient(25deg, #c77412, #ac6baf, #934af8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.menu--chic .menu__cover__card__step {
+.menu--chic .menu__step {
   font-family: sans-serif;
 }
-.menu--chic .menu__cover__card__step h3 {
+.menu--chic .menu__step h3 {
   font-size: 1.4rem;
 }
-.menu--chic .menu__cover__card__step:nth-child(2) .menu__cover__card__step__title span {
+.menu--chic .menu__step:nth-child(2) .menu__step__title span {
   background-color: #c77412;
 }
-.menu--chic .menu__cover__card__step:nth-child(2) .menu__cover__card__step__title h3 {
+.menu--chic .menu__step:nth-child(2) .menu__step__title h3 {
   color: #c77412;
 }
-.menu--chic .menu__cover__card__step:nth-child(2) .menu__cover__card__step__title h3::after {
+.menu--chic .menu__step:nth-child(2) .menu__step__title h3::after {
   background-color: #c77412;
 }
-.menu--chic .menu__cover__card__step:nth-child(2) .menu__cover__card__step__dishes {
+.menu--chic .menu__step:nth-child(2) .menu__step__dishes {
   color: #c77412;
 }
-.menu--chic .menu__cover__card__step:nth-child(3) .main-offers__menu__step__title span {
+.menu--chic .menu__step:nth-child(3) .menu__step__title span {
   background-color: #ac6baf;
 }
-.menu--chic .menu__cover__card__step:nth-child(3) .main-offers__menu__step__title h3 {
+.menu--chic .menu__step:nth-child(3) .menu__step__title h3 {
   color: #ac6baf;
 }
-.menu--chic .menu__cover__card__step:nth-child(3) .main-offers__menu__step__title h3::after {
+.menu--chic .menu__step:nth-child(3) .menu__step__title h3::after {
   background-color: #ac6baf;
 }
-.menu--chic .menu__cover__card__step:nth-child(3) .menu__cover__card__step__dishes {
+.menu--chic .menu__step:nth-child(3) .menu__step__dishes {
   color: #ac6baf;
 }
-.menu--chic .menu__cover__card__step:nth-child(4) .main-offers__menu__step__title span {
+.menu--chic .menu__step:nth-child(4) .menu__step__title span {
   background-color: #934af8;
 }
-.menu--chic .menu__cover__card__step:nth-child(4) .main-offers__menu__step__title h3 {
+.menu--chic .menu__step:nth-child(4) .menu__step__title h3 {
   color: #934af8;
 }
-.menu--chic .menu__cover__card__step:nth-child(4) .main-offers__menu__step__title h3::after {
+.menu--chic .menu__step:nth-child(4) .menu__step__title h3::after {
   background-color: #934af8;
 }
-.menu--chic .menu__cover__card__step:nth-child(4) .menu__cover__card__step__dishes {
+.menu--chic .menu__step:nth-child(4) .menu__step__dishes {
   color: #934af8;
 }
 
@@ -326,11 +318,11 @@ a {
   font-size: 2rem;
 }
 
-.menu__cover__card__step {
+.menu__step {
   font-family: "Handlee", cursive, sans-serif;
 }
 
-.menu__cover__card__step__dishes {
+.menu__step__dishes {
   font-family: "Handlee", cursive, sans-serif;
 }
 
@@ -341,6 +333,9 @@ a {
   font-family: "Dancing Script", cursive;
   font-size: 40px;
   color: #3d1319;
+}
+.menu--enchantee h2 {
+  font-size: 40px;
 }
 .menu--enchantee h3 {
   font-family: "Handlee", cursive, sans-serif;
@@ -390,7 +385,8 @@ a {
   width: 35%;
   text-align: center;
 }
-.menu__cover__card {
+
+.restaurant {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -399,24 +395,24 @@ a {
   box-shadow: 2em;
   text-align: center;
 }
-.menu__cover__card__step {
-  margin: 25px 0;
+
+.menu__step {
+  margin: 25px 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
-.menu__cover__card__step__title {
+.menu__step__title {
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
-.menu__cover__card__step__dishes p {
+.menu__step__dishes p {
   margin-bottom: 8px;
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.menu__cover__card__step .price {
+.menu__step .price {
   margin-top: 4px;
   font-weight: bold;
 }
@@ -534,31 +530,31 @@ a {
   margin: auto;
 }
 
-.menu--enchantee .menu__cover__card__step__title span {
+.menu--enchantee .menu__step__title span {
   background-color: #181616;
 }
 
-.menu--enchantee .menu__cover__card__step h3::after {
+.menu--enchantee .menu__step h3::after {
   background: #111111;
 }
 
-.menu--chic .menu__cover__card__step__title span {
+.menu--chic .menu__step__title span {
   background-color: #181616;
 }
 
-.menu--chic .menu__cover__card__step h3::after {
+.menu--chic .menu__step h3::after {
   background: #111111;
 }
 
-.menu--papilles .menu__cover__card__step__title span {
+.menu--papilles .menu__step__title span {
   background-color: #181616;
 }
 
-.menu--papilles .menu__cover__card__step h3::after {
+.menu--papilles .menu__step h3::after {
   background: #111111;
 }
 
-.menu__cover__card__step__title {
+.menu__step__title {
   position: relative;
   width: 100%;
   display: flex;
@@ -567,7 +563,7 @@ a {
   margin-bottom: 20px;
 }
 
-.menu__cover__card__step__title h3::after {
+.menu__step__title h3::after {
   content: "";
   display: block;
   height: 4px;
@@ -575,17 +571,17 @@ a {
   transition: width 0.5s ease-in-out;
 }
 
-.menu__cover__card__step__title h3:hover::after {
+.menu__step__title h3:hover::after {
   width: 100%;
 }
 
-.menu__cover__card__step__title .side-line {
+.menu__step__title .side-line {
   display: block;
   width: 30%;
   height: 4px;
 }
 
-.menu__cover__card__step__dishes p {
+.menu__step__dishes p {
   font-size: 1.6rem;
   text-align: center;
 }

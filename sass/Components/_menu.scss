@@ -14,6 +14,9 @@
                 font-size: map-get($variation, font-size-p);
                 color: map-get($variation, text-color-p);
             }
+            h2{
+                font-size: map-get($variation, font-size-h2)
+            }
 
             h3 {
                 font-family: map-get($variation, font-family-h3);                
@@ -28,45 +31,46 @@
     &__cover {
         width: 35%;
         text-align: center;
-        &__card {
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 40px;
-            padding: 30px 12em;
-            box-shadow: 2em;
-            text-align: center;
- 
-            &__step {
-              margin: 25px 0;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-        
-              &__title {
-                font-size: 1.5rem;
-                margin-bottom: 20px;
-        
-              }
-        
-              &__dishes p {
-                margin-bottom: 8px;
-                font-size: 1.2rem;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-              }
-        
-              .price {
-                margin-top: 4px;
-                font-weight: bold;
-              }
-            }
-          }
+      
         }
         
     }
+    .restaurant {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+        padding: 30px 12em;
+        box-shadow: 2em;
+        text-align: center;
+    }
+        .menu__step {
+          margin: 25px 50px;
+          display: flex;
+          flex-direction: column;
+       
+    
+          &__title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+    
+          }
+    
+          &__dishes p {
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+    
+          .price {
+            margin-top: 4px;
+            font-weight: bold;
+          }
+        }
+      
     /*
     @media screen and (min-width: 768px){
        .menu__cover{
