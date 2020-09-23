@@ -23,6 +23,7 @@
                 font-size: map-get($variation, font-size-h3);
                 color: map-get($variation, text-color-h3);
             }
+            
         }
     }
 
@@ -35,6 +36,10 @@
         }
         
     }
+    .menu
+    {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.247);
+    }
     .restaurant {
 
         display: flex;
@@ -44,6 +49,10 @@
         padding: 30px 12em;
         box-shadow: 2em;
         text-align: center;
+        h2{
+            font-size: 4em;
+        }
+        
     }
         .menu__step {
           margin: 25px 50px;

@@ -14,10 +14,7 @@
       align-items: center;
      
   }
-
-
-
-  .menu__step{
+.menu__step{
       font-family: sans-serif;
    
       h3{
@@ -74,8 +71,21 @@
   } 
 }
 
-// **********
-
+// **menu--papilles**/
+.menu--papilles{
+    background-color: #f9f9f9;;
+    color: rgb(32, 32, 29);
+    .top-title{
+        h2{
+            font-family:sans-serif;
+            font-size: 3rem;
+            padding: 0 20px 30px 20px;
+            background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }}
+}
+//***
 
 
 .fa-music {
@@ -119,10 +129,6 @@
 
 
 }
-
-
-
-
 .menu__step__dishes {
   font-family: 'Handlee', cursive, sans-serif;
 }
