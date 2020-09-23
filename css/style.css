@@ -318,10 +318,6 @@ a {
 .top-title .music-icon {
   font-size: 2.5rem;
 }
-.top-title h2 {
-  font-style: "Dancing Script", cursive;
-  font-size: 2.5rem;
-}
 
 .last-title .music-icon {
   font-size: 2rem;
@@ -359,7 +355,7 @@ a {
   background-color: linear-gradient(to right, #c67412 0%, #6e4ccc 100%);
 }
 .menu--chic p {
-  font-family: "Dancing Script", cursive;
+  font-family: "croissant one";
   font-size: 40px;
   color: linear-gradient(to right, #c67412 0%, #6e4ccc 100%);
 }
