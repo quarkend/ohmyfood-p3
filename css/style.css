@@ -574,6 +574,14 @@ a {
   background: #0665f0;
 }
 
+.menu--gout .menu__step__title span {
+  background-color: #181616;
+}
+
+.menu--gout .menu__step h3::after {
+  background: #111111;
+}
+
 .menu__step__title {
   position: relative;
   width: 100%;
