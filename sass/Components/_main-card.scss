@@ -4,9 +4,11 @@
     background-color: #fff5fe;
     color: #c77412;
   p{
-      span{
-          font-size: 1.2rem;
-      }
+      
+      
+        @include gradient-text(-25deg, $chic-gradient-color1, $chic-gradient-color2, $chic-gradient-color3);
+       
+      
   }
   .top-title{
       display: flex;

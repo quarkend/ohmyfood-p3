@@ -1,0 +1,26 @@
+.soon {
+    font-size: 1.6em;
+    justify-content: center;
+    margin: 1em 0 4em 1em;
+    border-radius: 1em;
+    padding: 1% 2%;
+    color: #FEC85F;
+    background: #579C87;
+    width: 25%;
+
+  }/*****/
+  
+
+  
+  .soon, 
+  .footer__contact,
+  .footer__legal-notice {
+    position: relative;
+  }
+  
+  
+  .footer__contact:hover,
+  .footer__legal-notice:hover {
+    -webkit-animation: wiggle 5s ease-in;
+    animation: wiggle 5s ease-in;
+  }

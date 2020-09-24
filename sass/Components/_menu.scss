@@ -8,7 +8,7 @@
         &--#{$modificateur-name} {
             
             background-color: map-get($variation, background-color);
-
+            box-shadow: map-get($variation, $box-shadow-menu);
             p {
                 font-family: map-get($variation, font-family-p);
                 font-size: map-get($variation, font-size-p);
@@ -36,10 +36,7 @@
         }
         
     }
-    .menu
-    {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.247);
-    }
+ 
     .restaurant {
 
         display: flex;
@@ -79,7 +76,59 @@
             font-weight: bold;
           }
         }
-      
+       .menu--enchantee .menu__step__title span {
+  background-color: #181616;
+}
+.menu--enchantee .menu__step h3::after {
+  background: #111111;
+}
+
+.menu--chic .menu__step__title span {
+  background-color: #181616;
+}
+.menu--chic .menu__step h3::after {
+  background: #111111;
+}
+.menu--papilles .menu__step__title span {
+  background-color:  #0665f0;
+}
+.menu--papilles .menu__step h3::after {
+  background:#0665f0;
+}
+.menu--gout .menu__step__title span {
+  background-color: #181616;
+}
+.menu--gout .menu__step h3::after {
+  background: #111111;
+}
+  .menu__step__title {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: auto;
+  }
+  .menu__step__title h3::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+  }
+  .menu__step__title h3:hover::after {
+    width: 100%;
+  }
+  .menu__step__title .side-line {
+    display: block;
+    width: 30%;
+    height: 4px;
+  }
+  .menu__step__dishes p {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
     /*
     @media screen and (min-width: 768px){
        .menu__cover{

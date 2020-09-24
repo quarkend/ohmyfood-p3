@@ -3,14 +3,13 @@
 $color-card : #7c2f3c;
 $color-bar :  #579C87;
 $body-bkg : rgb(255, 255, 255);
+$box-shadow-menu: 0 0 10px rgba(0, 0, 0, 0.247);
 // CHIC
 $chic-bkg-color: rgb(255,245,254);
 $chic-color: rgb(199,116,18);
 $chic-gradient-color1: rgb(199,116,18);
 $chic-gradient-color2: rgb(172,107,175);
 $chic-gradient-color3: rgb(147, 74, 248);
-
-
 $menu-variations: (
    enchantee: (
     background-color: #FCDFDB,
@@ -31,7 +30,7 @@ $menu-variations: (
     background-color:linear-gradient(to right, #c67412 0%, #6e4ccc 100%),
     mix-blend-mode: screen,
     text-color-p: linear-gradient(to right, #c67412 0%, #6e4ccc 100%),
-    text-color-h3: #3d1319,
+    text-color-h3: #c67412,
     font-family-p: ('croissant one'),
     font-family-h3: ('Handlee', cursive, sans-serif),
     font-size-p: 40px,
@@ -57,6 +56,7 @@ $menu-variations: (
     font-size-p: 40px,
     font-size-h3: 40px,
   ),
+  
 );
 
 
