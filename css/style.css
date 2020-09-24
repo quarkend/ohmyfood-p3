@@ -432,6 +432,9 @@ a {
 }
 .restaurant h2 {
   font-size: 4em;
+  background: -webkit-linear-gradient(-25deg, #c77412, #ac6baf, #934af8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu__step {
@@ -517,6 +520,11 @@ a {
 .menu__step__dishes p {
   font-size: 1.6rem;
   text-align: center;
+}
+
+.menu--gout .menu__step__title span {
+  -webkit-clip-path: polygon(87% 39%, 99% 47%, 86% 55%, 30% 49%, 8% 47%, 30% 45%);
+  clip-path: polygon(169% 121%, 72% 145%, 72% 193%, -53% -218%, 45% 92%, -18% -55%);
 }
 
 /*
@@ -657,11 +665,11 @@ a {
 }
 
 .menu--gout .menu__step__title span {
-  background-color: #181616;
+  background-color: darkolivegreen;
 }
 
 .menu--gout .menu__step h3::after {
-  background: #111111;
+  background: darkolivegreen;
 }
 
 .menu__step__title {
