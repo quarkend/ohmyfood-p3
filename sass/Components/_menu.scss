@@ -1,108 +1,87 @@
+.menu {
+  //ajout de la boucle pour chaque modificateur spécifique à chaque menu
+  // la variable utilisée qui est une map est dans le fichier variables !
+  @each $modificateur-name, $variation in $menu-variations {
+    &--#{$modificateur-name} {
+      background-color: map-get($variation, background-color);
+      //box-shadow: map-get($variation, $box-shadow-menu);
+      p {
+        font-family: map-get($variation, font-family-p);
+        font-size: map-get($variation, font-size-p);
+        color: map-get($variation, text-color-p);
+      }
+      h2 {
+        font-size: map-get($variation, font-size-h2);
+      }
+
+      h3 {
+        font-family: map-get($variation, font-family-h3);
+        font-size: map-get($variation, font-size-h3);
+        color: map-get($variation, text-color-h3);
+      }
+    }
+  }
+
+  //code du style commun aux cover des menus
+  &__cover {
+    width: 35%;
+    text-align: center;
+  }
+
+  &__detail {
+    @each $modificateur-name, $color in $menu-colors {
+      &--#{$modificateur-name} {
+        .menu__step__title,
+        p,
+        h3::after {
+          color: map-get($color, color);
+        }
+      }
+    }
+  }
+}
+
+.menu__detail {
+  @each $modificateur-name, $color in $menu-colors {
+    &--#{$modificateur-name} {
+      h3::after {
+        background-color: map-get($color, color);
+      }
+    }
+  }
+}
 
 .menu {
-
-    //ajout de la boucle pour chaque modificateur spécifique à chaque menu
-    // la variable utilisée qui est une map est dans le fichier variables ! 
-    @each $modificateur-name,
-    $variation in $menu-variations {
-        &--#{$modificateur-name} {
-            
-            background-color: map-get($variation, background-color);
-            box-shadow: map-get($variation, $box-shadow-menu);
-            p {
-                font-family: map-get($variation, font-family-p);
-                font-size: map-get($variation, font-size-p);
-                color: map-get($variation, text-color-p);
-            }
-            h2{
-                font-size: map-get($variation, font-size-h2)
-            }
-
-            h3 {
-                font-family: map-get($variation, font-family-h3);                
-                font-size: map-get($variation, font-size-h3);
-                color: map-get($variation, text-color-h3);
-            }
-            
-        }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 30px 12em;
+  box-shadow: 2em;
+  text-align: center;
+  box-shadow: 0px 0px 10px grey;
+  padding: 5em;
+  margin: 0 5em 7em 5em;
+}
+.menu__step {
+  @each $modificateur-name, $color in $menu-colors {
+    &--#{$modificateur-name} {
+      .menu__step__title {
+        background: map-get($color, color);
+      }
     }
-
-
-    //code du style commun aux cover des menus 
-    &__cover {
-        width: 35%;
-        text-align: center;
-      
-        }
-        
-    }
- 
-    .restaurant {
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 40px;
-        padding: 30px 12em;
-        box-shadow: 2em;
-        text-align: center;
-        h2{
-            font-size: 4em;
-            @include gradient-text(-25deg, $chic-gradient-color1, $chic-gradient-color2, $chic-gradient-color3);
-        }
-        
-    }
-        .menu__step {
-          margin: 25px 50px;
-          display: flex;
-          flex-direction: column;
-       
-    
-          &__title {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-    
-          }
-    
-          &__dishes p {
-            margin-bottom: 8px;
-            font-size: 1.2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-          }
-    
-          .price {
-            margin-top: 4px;
-            font-weight: bold;
-          }
-        }
-       .menu--enchantee .menu__step__title span {
-  background-color: #181616;
-}
-.menu--enchantee .menu__step h3::after {
-  background: #111111;
+  }
 }
 
-.menu--chic .menu__step__title span {
-  background-color: #181616;
-}
-.menu--chic .menu__step h3::after {
-  background: #111111;
-}
-.menu--papilles .menu__step__title span {
-  background-color:  #0665f0;
-}
-.menu--papilles .menu__step h3::after {
-  background:#0665f0;
-}
-.menu--gout .menu__step__title span {
-  background-color: #181616;
-}
-.menu--gout .menu__step h3::after {
-  background: #111111;
-}
-  .menu__step__title {
+.menu__step {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
     position: relative;
     width: 100%;
     display: flex;
@@ -110,121 +89,60 @@
     align-items: center;
     margin-bottom: auto;
   }
-  .menu__step__title h3::after {
-    content: "";
-    display: block;
-    height: 4px;
-    width: 0;
-    transition: width 0.5s ease-in-out;
-  }
-  .menu__step__title h3:hover::after {
-    width: 100%;
-  }
-  .menu__step__title .side-line {
-    display: block;
-    width: 30%;
-    height: 4px;
-  }
-  .menu__step__dishes p {
-    font-size: 1.6rem;
-    text-align: center;
+  img {
+    width: auto;
+    overflow: hidden;
+    margin: 1 0em;
   }
 
-  .menu--gout .menu__step__title span {
-    -webkit-clip-path: polygon(87% 39%, 99% 47%, 86% 55%, 30% 49%, 8% 47%, 30% 45%);
-    clip-path: polygon(169% 121%, 72% 145%, 72% 193%, -53% -218%, 45% 92%, -18% -55%);
+  &__dishes p {
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-    /*
-    @media screen and (min-width: 768px){
-       .menu__cover{
-            >h2{
-                font-size: 2.5rem;
-            }
-            padding-bottom: 100px;
-            &__card{
-                width: 90%;
-                &__step{
-                    width: 90%;
-                    &__title{
-                        position: relative;
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        margin-bottom: 20px;
-                        h3::after{
-                            content: '';
-                            display: block;
-                            height: 4px;
-                            width: 0;
-                            transition: width .5s ease-in-out;
-                        }
-                        h3:hover::after{
-                            width: 100%;
-                        }
-                        .side-bar{
-                            display: block;
-                            width: 30%;
-                            height: 4px;
-                        }
-                    }
-                    &__dishes{
-                        p{
-                            font-size: 1.6rem;
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-    @media screen and (min-width: 1200px){
-        .menu__cover{
-            >h2{
-                font-size: 4rem;
-            }
-            &__card{
-                justify-content: space-around;
-                width: 60%;
-              
-                &__step{
-                    &__dishes{
-                        width: 100%;
-                        p{
-                            width: 100%;
-                            flex-direction: row;
-                            justify-content: space-between;
-                            text-align: start;
-                        }
-                    }
-                }
-            }
-        }
-        .menu--enchantee{
-            .top-title{
-                h2{
-                    font-size: 3rem;
-                }
-            }
-        }
-        .menu--enchantee,.menu--chic{
-            .top-title{
-                h2{
-                    font-size: 5rem;
-                }
-            }
-            .menu__cover__card__step{
-                &__dishes{
-                    padding: 0 8%;
-                    p{
-                        span{
-                            font-size: 1.7rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-        
-*/
+
+  .price {
+    margin-top: 4px;
+    font-weight: bold;
+  }
+}
+
+.menus--note h2 {
+  @include gradient-text(
+    $deg,
+    $chic-gradient-color1,
+    $chic-gradient-color2,
+    $chic-gradient-color3
+  );
+  font-size: 3em;
+}
+
+.menu--chic p {
+  @include gradient-text(
+    $deg,
+    $chic-gradient-color1,
+    $chic-gradient-color2,
+    $chic-gradient-color3
+  );
+ 
+}
+
+.menu h3 {
+  position: relative;
+
+  &:after {
+    content: "";
+
+    position: absolute;
+    width: 1%;
+    height: 2px;
+    display: block;
+
+    transition: width 500ms ease;
+  }
+  &:hover:after {
+    width: 100%;
+  }
+}

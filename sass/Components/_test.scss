@@ -1,0 +1,474 @@
+
+/*.menu {
+
+    //ajout de la boucle pour chaque modificateur spécifique à chaque menu
+    // la variable utilisée qui est une map est dans le fichier variables ! 
+    @each $modificateur-name,
+    $variation in $menu-variations {
+        &--#{$modificateur-name} {
+            
+            background-color: map-get($variation, background-color);
+            //box-shadow: map-get($variation, $box-shadow-menu);
+            p {
+                font-family: map-get($variation, font-family-p);
+                font-size: map-get($variation, font-size-p);
+                color: map-get($variation, text-color-p);
+            }
+            h2{
+                font-size: map-get($variation, font-size-h2)
+            }
+
+            h3 {
+                font-family: map-get($variation, font-family-h3);                
+                font-size: map-get($variation, font-size-h3);
+                color: map-get($variation, text-color-h3);
+            }
+            
+        }
+    }
+
+
+    //code du style commun aux cover des menus 
+    &__cover {
+        width: 35%;
+        text-align: center;
+      
+        }
+        
+    
+
+
+    &__detail {
+        @each $modificateur-name,
+        $color in $menu-colors {
+            &--#{$modificateur-name} {
+                
+               
+                p {               
+                    color: map-get($color, color);
+                }
+                
+                
+            }
+        }       
+    }
+}
+
+ 
+    .restaurant {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+        padding: 30px 12em;
+        box-shadow: 2em;
+        text-align: center;
+        h2{
+            font-size: 4em;
+        }
+        
+    }
+        .menu__step {
+          margin: 25px 50px;
+          display: flex;
+          flex-direction: column;
+       
+    
+          &__title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+    
+          }
+    
+          &__dishes p {
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+    
+          .price {
+            margin-top: 4px;
+            font-weight: bold;
+          }
+        }
+       .menu--enchantee .menu__step__title span {
+  background-color: #181616;
+}
+.menu--enchantee .menu__step h3::after {
+  background: #111111;
+}
+
+.menu--chic .menu__step__title span {
+  background-color: #181616;
+}
+.menu--chic .menu__step h3::after {
+  background: #111111;
+}
+.menu--papilles .menu__step__title span {
+  background-color:  #0665f0;
+}
+.menu--papilles .menu__step h3::after {
+  background:#0665f0;
+}
+.menu--gout .menu__step__title span {
+  background-color: #181616;
+}
+.menu--gout .menu__step h3::after {
+  background: #111111;
+}
+  .menu__step__title {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: auto;
+  }
+  .menu__step__title h3::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+  }
+  .menu__step__title h3:hover::after {
+    width: 100%;
+  }
+  .menu__step__title .side-line {
+    display: block;
+    width: 30%;
+    height: 4px;
+  }
+  .menu__step__dishes p {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  
+
+.menu--enchantee .menu__step__title span {
+    background-color: #181616;
+  }
+  .menu--enchantee .menu__step h3::after {
+    background: #111111;
+  }
+  
+  .menu--chic .menu__step__title span {
+    background-color: #181616;
+  }
+  .menu--chic .menu__step h3::after {
+    background: #111111;
+  }
+  .menu--papilles .menu__step__title span {
+    background-color:  #0665f0;
+  }
+  .menu--papilles .menu__step h3::after {
+    background:#0665f0;
+  }
+  .menu--gout .menu__step__title span {
+    background-color:darkolivegreen;
+  }
+  .menu--gout .menu__step h3::after {
+    background:darkolivegreen;
+  }
+    .menu__step__title {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: auto;
+    }
+    .menu__step__title h3::after {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 0;
+      transition: width 0.5s ease-in-out;
+    }
+    .menu__step__title h3:hover::after {
+      width: 100%;
+    }
+    .menu__step__title .side-line {
+      display: block;
+      width: 30%;
+      height: 9px;
+    }
+    .menu__step__dishes p {
+      font-size: 1.6rem;
+      text-align: center;
+    }
+  
+   // _style-main
+.menus--chic{
+
+    background-color: #fff5fe;
+    color: #c77412;
+  p{
+      
+      
+        @include gradient-text(-25deg, $chic-gradient-color1, $chic-gradient-color2, $chic-gradient-color3);
+       
+      
+  }
+  .top-title{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     
+  }
+.menu__step{
+      font-family: sans-serif;
+   
+      h3{
+          font-size: 1.4rem;
+      }
+      &:nth-child(2){
+          .menu__step__title{
+              span{
+                  background-color: $chic-gradient-color1;
+              }
+              h3{
+                  color: $chic-gradient-color1;
+                  &::after{
+                      background-color: $chic-gradient-color1;
+                  }
+              }
+          }
+          .menu__step__dishes{
+              color: $chic-gradient-color1;
+          }
+      }
+      &:nth-child(3){
+          .menu__step__title{
+              span{
+                  background-color: $chic-gradient-color2;
+              }
+              h3{
+                  color: $chic-gradient-color2;
+                  &::after{
+                      background-color: $chic-gradient-color2;
+                  }
+              }
+          }
+          .menu__step__dishes{
+              color: $chic-gradient-color2;
+          }
+      } 
+      &:nth-child(4){
+          .menu__step__title{
+              span{
+                  background-color: $chic-gradient-color3;
+              }
+              h3{
+                  color: $chic-gradient-color3;
+                  &::after{
+                      background-color: $chic-gradient-color3;
+                  }
+              }
+          }
+          .menu__step__dishes{
+              color: $chic-gradient-color3;
+          }
+      }   
+  } 
+}
+
+
+.menu--papilles{
+    background-color: #f9f9f9;;
+    color: rgb(32, 32, 29);
+    .top-title{
+        h2{
+            font-family:sans-serif;
+            font-size: 3rem;
+            padding: 0 20px 30px 20px;
+            background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }}
+}
+
+//main-card
+.menus--chic{
+
+    background-color: #fff5fe;
+    color: #c77412;
+  p{
+      
+      
+        @include gradient-text(-25deg, $chic-gradient-color1, $chic-gradient-color2, $chic-gradient-color3);
+       
+      
+  }
+  .top-title{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     
+  }
+.menu__step{
+      font-family: sans-serif;
+   
+      h3{
+          font-size: 1.4rem;
+      }
+      &:nth-child(2){
+          .menu__step__title{
+              span{
+                  background-color: $chic-gradient-color1;
+              }
+              h3{
+                  color: $chic-gradient-color1;
+                  &::after{
+                      background-color: $chic-gradient-color1;
+                  }
+              }
+          }
+          .menu__step__dishes{
+              color: $chic-gradient-color1;
+          }
+      }
+      &:nth-child(3){
+          .menu__step__title{
+              span{
+                  background-color: $chic-gradient-color2;
+              }
+              h3{
+                  color: $chic-gradient-color2;
+                  &::after{
+                      background-color: $chic-gradient-color2;
+                  }
+              }
+          }
+          .menu__step__dishes{
+              color: $chic-gradient-color2;
+          }
+      } 
+      &:nth-child(4){
+          .menu__step__title{
+              span{
+                  background-color: $chic-gradient-color3;
+              }
+              h3{
+                  color: $chic-gradient-color3;
+                  &::after{
+                      background-color: $chic-gradient-color3;
+                  }
+              }
+          }
+          .menu__step__dishes{
+              color: $chic-gradient-color3;
+          }
+      }   
+  } 
+}
+
+// menu--papilles
+.menu--papilles{
+    background-color: #f9f9f9;;
+    color: rgb(32, 32, 29);
+    .top-title{
+        h2{
+            font-family:sans-serif;
+            font-size: 3rem;
+            padding: 0 20px 30px 20px;
+            background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }}
+}
+//
+
+
+.fa-music {
+  font-size: 8rem;
+  background: -webkit-gradient(linear, left top, right top, from(#f15c61), to(#f6916a));
+  background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+
+.top-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .music-icon {
+    font-size: 2.5rem;
+  }
+
+ 
+}
+
+.last-title {
+  .music-icon {
+    font-size: 2rem;
+  }
+
+  &__title {
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+  }
+}
+.menu__step {
+  font-family: 'Handlee', cursive, sans-serif;
+
+
+
+
+}
+.menu__step__dishes {
+  font-family: 'Handlee', cursive, sans-serif;
+
+}
+
+
+
+
+.fa-music {
+  font-size: 8rem;
+  background: -webkit-gradient(linear, left top, right top, from(#f15c61), to(#f6916a));
+  background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+
+.top-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .music-icon {
+    font-size: 2.5rem;
+  }
+
+ 
+}
+
+.last-title {
+  .music-icon {
+    font-size: 2rem;
+  }
+
+  &__title {
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+  }
+}
+.menu__step {
+  font-family: 'Handlee', cursive, sans-serif;
+
+
+
+
+}
+.menu__step__dishes {
+  font-family: 'Handlee', cursive, sans-serif;
+
+}
+
+

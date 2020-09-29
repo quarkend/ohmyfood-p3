@@ -10,6 +10,25 @@ $chic-color: rgb(199,116,18);
 $chic-gradient-color1: rgb(199,116,18);
 $chic-gradient-color2: rgb(172,107,175);
 $chic-gradient-color3: rgb(147, 74, 248);
+$deg:(0deg);
+
+$menu-colors:(
+    one:(
+      color: orange,
+    ),
+   too:(
+      color:rgb(172,107,175),
+    ),
+    tree:(
+      color: rgb(147, 74, 248),
+    ),
+  );
+
+
+
+
+  
+
 $menu-variations: (
    enchantee: (
     background-color: #FCDFDB,
@@ -27,9 +46,9 @@ $menu-variations: (
   chic: (
     
     
-    background-color:linear-gradient(to right, #c67412 0%, #6e4ccc 100%),
+    background-color:#FCDFDB,
     mix-blend-mode: screen,
-    text-color-p: linear-gradient(to right, #c67412 0%, #6e4ccc 100%),
+    text-color-p: #3d1319,
     text-color-h3: #c67412,
     font-family-p: ('croissant one'),
     font-family-h3: ('Handlee', cursive, sans-serif),
