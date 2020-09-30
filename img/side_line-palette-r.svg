@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="side_line-palette-r.svg">
+  <defs
+     id="defs2">
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="400"
+     inkscape:cy="560"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="971"
+     inkscape:window-x="1358"
+     inkscape:window-y="58"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <image
+       y="10.518452"
+       x="7.5932188"
+       xlink:href="data:image/png;base64,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"
+       height="7.6892977"
+       width="110.30165"
+       preserveAspectRatio="none"
+       id="image1676" />
+  </g>
+</svg>

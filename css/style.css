@@ -262,7 +262,7 @@ a {
   background-color: #FCDFDB;
 }
 .menu--enchantee p {
-  font-family: "Dancing Script", cursive;
+  font-family: "Devonshire", cursive, sans-serif;
   font-size: 40px;
   color: #3d1319;
 }
@@ -275,7 +275,7 @@ a {
   color: #3d1319;
 }
 .menu--chic {
-  background-color: #FCDFDB;
+  background-color: #fff5fe;
 }
 .menu--chic p {
   font-family: "croissant one";
@@ -283,7 +283,7 @@ a {
   color: #3d1319;
 }
 .menu--chic h3 {
-  font-family: "Handlee", cursive, sans-serif;
+  font-family: "Croissant One", cursive, sans-serif;
   font-size: 40px;
   color: #c67412;
 }
@@ -301,7 +301,7 @@ a {
   color: #3d1319;
 }
 .menu--palette-gout {
-  background-color: #fff5fe;
+  background-color: #fdfffd;
 }
 .menu--palette-gout p {
   font-family: "Dancing Script", cursive;
@@ -403,7 +403,6 @@ a {
   background: -webkit-linear-gradient(0deg, #c77412, #ac6baf, #934af8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 3em;
 }
 
 .menu--chic p {
@@ -425,6 +424,55 @@ a {
 }
 .menu h3:hover:after {
   width: 100%;
+}
+
+.menu__step {
+  font-family: "Handlee", cursive, sans-serif;
+}
+.menu__step h2 {
+  font-size: 3em;
+}
+.menu__step__title {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+}
+.menu__step__dishes {
+  font-family: "Handlee", cursive, sans-serif;
+}
+
+.fa-music {
+  font-size: 8rem;
+  background: -webkit-gradient(linear, left top, right top, from(#f15c61), to(#f6916a));
+  background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.last-title .music-icon {
+  font-size: 2rem;
+}
+.last-title__title {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+}
+
+.menu--papilles {
+  background-color: #f9f9f9;
+  color: #20201d;
+}
+.menu--papilles .top-title h2 {
+  font-family: sans-serif;
+  font-size: 3rem;
+  padding: 0 20px 30px 20px;
+  background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu--delice-papilles p {
+  background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .card {

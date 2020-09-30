@@ -4,7 +4,7 @@
   @each $modificateur-name, $variation in $menu-variations {
     &--#{$modificateur-name} {
       background-color: map-get($variation, background-color);
-      //box-shadow: map-get($variation, $box-shadow-menu);
+      
       p {
         font-family: map-get($variation, font-family-p);
         font-size: map-get($variation, font-size-p);
@@ -30,7 +30,9 @@
 
   &__detail {
     @each $modificateur-name, $color in $menu-colors {
-      &--#{$modificateur-name} {
+      &--#{$modificateur-name}
+      
+      {
         .menu__step__title,
         p,
         h3::after {
@@ -116,7 +118,7 @@
     $chic-gradient-color2,
     $chic-gradient-color3
   );
-  font-size: 3em;
+ 
 }
 
 .menu--chic p {
@@ -145,4 +147,63 @@
   &:hover:after {
     width: 100%;
   }
+}
+
+//
+
+
+.menu__step{
+  font-family: 'Handlee', cursive, sans-serif;
+
+  h2{
+    font-size: 3em;
+  }
+  &__title{
+        font-family: "Dancing Script", cursive;
+        font-size: 2rem;
+  }
+      &__dishes{
+        font-family: 'Handlee', cursive, sans-serif;
+      }
+
+      }
+
+.fa-music {
+  font-size: 8rem;
+  background: -webkit-gradient(linear, left top, right top, from(#f15c61), to(#f6916a));
+  background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+
+.last-title {
+  .music-icon {
+    font-size: 2rem;
+  }
+
+  &__title {
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+  }
+}
+//// menu--papilles
+.menu--papilles{
+  background-color: #f9f9f9;;
+  color: rgb(32, 32, 29);
+  .top-title{
+      h2{
+          font-family:sans-serif;
+          font-size: 3rem;
+          padding: 0 20px 30px 20px;
+          background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+  }}
+}
+.menu--delice-papilles p {
+
+  background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }

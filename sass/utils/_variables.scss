@@ -34,7 +34,7 @@ $menu-variations: (
     background-color: #FCDFDB,
     text-color-p: #3d1319,
     text-color-h3: #3d1319,
-    font-family-p: ('Dancing Script', cursive),
+    font-family-p: ("Devonshire", cursive, sans-serif),
     font-family-h3: ('Handlee', cursive, sans-serif),
     font-size-p: 40px,
     font-size-h2:40px,
@@ -46,12 +46,12 @@ $menu-variations: (
   chic: (
     
     
-    background-color:#FCDFDB,
+    background-color:#fff5fe,
     mix-blend-mode: screen,
     text-color-p: #3d1319,
     text-color-h3: #c67412,
     font-family-p: ('croissant one'),
-    font-family-h3: ('Handlee', cursive, sans-serif),
+    font-family-h3: ("Croissant One", cursive, sans-serif),
     font-size-p: 40px,
     font-size-h3: 40px,
   ),
@@ -67,7 +67,7 @@ $menu-variations: (
   ),
   palette-gout : (
     
-    background-color: #fff5fe,
+    background-color:#fdfffd,
     text-color-p: #3d1319,
     text-color-h3: #3d1319,
     font-family-p: ('Dancing Script', cursive),
