@@ -344,7 +344,6 @@ a {
 }
 
 .menu {
-  display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 40px;
@@ -371,10 +370,6 @@ a {
   flex-direction: column;
 }
 .menu__step__title {
-  font-size: 1.4rem;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
   position: relative;
   width: 100%;
   display: flex;

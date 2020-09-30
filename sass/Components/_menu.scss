@@ -54,7 +54,7 @@
 }
 
 .menu {
-  display: flex;
+
   flex-direction: column;
   align-items: center;
   margin-bottom: 40px;
@@ -80,10 +80,8 @@
   flex-direction: column;
 
   &__title {
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+    
+    
     position: relative;
     width: 100%;
     display: flex;
