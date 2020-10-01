@@ -1,4 +1,15 @@
+.page { 
+  h2 {
+  font-size: 3em;
+}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .menu {
+  width:60%;
+  
   h3 {
     position: relative;
 
@@ -9,8 +20,7 @@
       width: 1%;
       height: 2px;
       display: block;
-
-      transition: width 500ms ease;
+       transition: width 500ms ease;
     }
     &:hover:after {
       width: 100%;
@@ -87,7 +97,7 @@
 
     p {
       margin-bottom: 8px;
-
+   
       display: flex;
       justify-content: space-between;
       align-items: center;
