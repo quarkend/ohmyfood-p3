@@ -201,7 +201,7 @@ a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #579C87;
+  background-color: #579c87;
   border-top: 3px solid #a1c181;
   position: fixed;
   justify-content: space-between;
@@ -213,7 +213,7 @@ a {
   margin: 0em;
 }
 .footer a {
-  color: #FEC85F;
+  color: #fec85f;
   font-family: "roboto", sans-serif;
   font-size: 1.5rem;
 }
@@ -223,12 +223,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #579C87;
+  background-color: #579c87;
   border-bottom: 3px solid #76ad3e;
   margin-bottom: 60px;
 }
 .header h1 {
-  color: #FEC85F;
+  color: #fec85f;
   font-family: "Montserrat", serif;
   font-size: 5rem;
   text-align: center;
@@ -258,8 +258,30 @@ a {
   animation: wiggle 5s ease-in;
 }
 
+.menu {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 0px 10px grey;
+  padding: 5em;
+  margin: 0 14em 0em 14em;
+}
+.menu h3 {
+  position: relative;
+}
+.menu h3:after {
+  content: "";
+  position: absolute;
+  width: 1%;
+  height: 2px;
+  display: block;
+  transition: width 500ms ease;
+}
+.menu h3:hover:after {
+  width: 100%;
+}
 .menu--enchantee {
-  background-color: #FCDFDB;
+  background-color: #fcdfdb;
 }
 .menu--enchantee p {
   font-family: "Devonshire", cursive, sans-serif;
@@ -293,7 +315,6 @@ a {
 .menu--delice-papilles p {
   font-family: "Dancing Script", cursive;
   font-size: 40px;
-  color: #3d1319;
 }
 .menu--delice-papilles h3 {
   font-family: "Handlee", cursive, sans-serif;
@@ -317,61 +338,51 @@ a {
   width: 35%;
   text-align: center;
 }
-.menu__detail--one .menu__step__title,
-.menu__detail--one p,
-.menu__detail--one h3::after {
+.menu__detail--one {
   color: orange;
 }
-.menu__detail--too .menu__step__title,
-.menu__detail--too p,
-.menu__detail--too h3::after {
-  color: #ac6baf;
-}
-.menu__detail--tree .menu__step__title,
-.menu__detail--tree p,
-.menu__detail--tree h3::after {
-  color: #934af8;
-}
-
 .menu__detail--one h3::after {
   background-color: orange;
+}
+.menu__detail--too {
+  color: #ac6baf;
 }
 .menu__detail--too h3::after {
   background-color: #ac6baf;
 }
+.menu__detail--tree {
+  color: #934af8;
+}
 .menu__detail--tree h3::after {
   background-color: #934af8;
 }
-
-.menu {
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
-  padding: 30px 12em;
-  box-shadow: 2em;
-  text-align: center;
-  box-shadow: 0px 0px 10px grey;
-  padding: 5em;
-  margin: 0 5em 7em 5em;
+.menu__detail--for {
+  color: blue;
 }
-
-.menu__step--one .menu__step__title {
-  background: orange;
+.menu__detail--for h3::after {
+  background-color: blue;
 }
-.menu__step--too .menu__step__title {
-  background: #ac6baf;
+.menu__detail--five {
+  color: #0059ff;
 }
-.menu__step--tree .menu__step__title {
-  background: #934af8;
+.menu__detail--five h3::after {
+  background-color: #0059ff;
 }
-
+.menu__detail--six {
+  color: #0099ff;
+}
+.menu__detail--six h3::after {
+  background-color: #0099ff;
+}
 .menu__step {
   display: flex;
   flex-direction: column;
 }
-.menu__step__title {
+.menu__step h2 {
+  font-size: 3em;
+}
+.menu__step span {
   position: relative;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -382,9 +393,8 @@ a {
   overflow: hidden;
   margin: 1 0em;
 }
-.menu__step__dishes p {
+.menu__step p {
   margin-bottom: 8px;
-  font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -394,45 +404,11 @@ a {
   font-weight: bold;
 }
 
-.menus--note h2 {
-  background: -webkit-linear-gradient(0deg, #c77412, #ac6baf, #934af8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
+.menus--note h2,
 .menu--chic p {
   background: -webkit-linear-gradient(0deg, #c77412, #ac6baf, #934af8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.menu h3 {
-  position: relative;
-}
-.menu h3:after {
-  content: "";
-  position: absolute;
-  width: 1%;
-  height: 2px;
-  display: block;
-  transition: width 500ms ease;
-}
-.menu h3:hover:after {
-  width: 100%;
-}
-
-.menu__step {
-  font-family: "Handlee", cursive, sans-serif;
-}
-.menu__step h2 {
-  font-size: 3em;
-}
-.menu__step__title {
-  font-family: "Dancing Script", cursive;
-  font-size: 2rem;
-}
-.menu__step__dishes {
-  font-family: "Handlee", cursive, sans-serif;
 }
 
 .fa-music {
@@ -458,18 +434,30 @@ a {
 .menu--papilles .top-title h2 {
   font-family: sans-serif;
   font-size: 3rem;
-  padding: 0 20px 30px 20px;
   background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.menu--delice-papilles h3,
 .menu--delice-papilles p {
   background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.menu--palette-gout h3,
+.menu--palette-gout p {
+  background: -webkit-linear-gradient(0deg, rgba(94, 255, 0, 0.445), rgba(0, 255, 21, 0.842), #00ff2a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media all and (max-width: 767px) {
+  .menu {
+    margin: auto;
+  }
+}
 .card {
   min-height: 500px;
   display: flex;

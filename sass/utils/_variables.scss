@@ -1,83 +1,103 @@
- // Header Footer
- $color-bar-font : #FEC85F;
-$color-card : #7c2f3c;
-$color-bar :  #579C87;
-$body-bkg : rgb(255, 255, 255);
+// Header Footer
+$color-bar-font: #fec85f;
+$color-card: #7c2f3c;
+$color-bar: #579c87;
+$body-bkg: rgb(255, 255, 255);
 $box-shadow-menu: 0 0 10px rgba(0, 0, 0, 0.247);
 // CHIC
-$chic-bkg-color: rgb(255,245,254);
-$chic-color: rgb(199,116,18);
-$chic-gradient-color1: rgb(199,116,18);
-$chic-gradient-color2: rgb(172,107,175);
+$chic-bkg-color: rgb(255, 245, 254);
+$chic-color: rgb(199, 116, 18);
+$chic-gradient-color1: rgb(199, 116, 18);
+$chic-gradient-color2: rgb(172, 107, 175);
 $chic-gradient-color3: rgb(147, 74, 248);
-$deg:(0deg);
+$deg: (0deg);
 
-$menu-colors:(
-    one:(
-      color: orange,
-    ),
-   too:(
-      color:rgb(172,107,175),
-    ),
-    tree:(
-      color: rgb(147, 74, 248),
-    ),
-  );
-
-
-
-
-  
+$menu-colors: (
+  one: (
+    color: orange,
+  ),
+  too: (
+    color: rgb(172, 107, 175),
+  ),
+  tree: (
+    color: rgb(147, 74, 248),
+  ),
+  for: (
+    color: blue,
+  ),
+  five: (
+    color: rgb(0, 89, 255),
+  ),
+  six: (
+    color: rgb(0, 153, 255),
+  ),
+);
 
 $menu-variations: (
-   enchantee: (
-    background-color: #FCDFDB,
+  enchantee: (
+    background-color: #fcdfdb,
     text-color-p: #3d1319,
     text-color-h3: #3d1319,
-    font-family-p: ("Devonshire", cursive, sans-serif),
-    font-family-h3: ('Handlee', cursive, sans-serif),
+    font-family-p: (
+      "Devonshire",
+      cursive,
+      sans-serif,
+    ),
+    font-family-h3: (
+      "Handlee",
+      cursive,
+      sans-serif,
+    ),
     font-size-p: 40px,
-    font-size-h2:40px,
+    font-size-h2: 40px,
     font-size-h3: 40px,
-    
     //tu peux aussi imaginer entrer des couleurs pour faire les dégradés par exemple....
-    
   ),
   chic: (
-    
-    
-    background-color:#fff5fe,
-    mix-blend-mode: screen,
+    background-color: #fff5fe,
     text-color-p: #3d1319,
     text-color-h3: #c67412,
-    font-family-p: ('croissant one'),
-    font-family-h3: ("Croissant One", cursive, sans-serif),
+    font-family-p: (
+      "croissant one",
+    ),
+    font-family-h3: (
+      "Croissant One",
+      cursive,
+      sans-serif,
+    ),
     font-size-p: 40px,
     font-size-h3: 40px,
   ),
   delice-papilles: (
-    
     background-color: #edefef,
-    text-color-p: #3d1319,
+
     text-color-h3: #3d1319,
-    font-family-p: ('Dancing Script', cursive),
-    font-family-h3: ('Handlee', cursive, sans-serif),
+    font-family-p: (
+      "Dancing Script",
+      cursive,
+    ),
+    font-family-h3: (
+      "Handlee",
+      cursive,
+      sans-serif,
+    ),
     font-size-p: 40px,
     font-size-h3: 40px,
   ),
-  palette-gout : (
-    
-    background-color:#fdfffd,
+  palette-gout: (
+    background-color: #fdfffd,
     text-color-p: #3d1319,
     text-color-h3: #3d1319,
-    font-family-p: ('Dancing Script', cursive),
-    font-family-h3: ('Handlee', cursive, sans-serif),
+    font-family-p: (
+      "Dancing Script",
+      cursive,
+    ),
+    font-family-h3: (
+      "Handlee",
+      cursive,
+      sans-serif,
+    ),
     font-size-p: 40px,
     font-size-h3: 40px,
   ),
-  
 );
-
-
-
-
