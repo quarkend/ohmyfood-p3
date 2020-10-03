@@ -1,26 +1,26 @@
-.page { 
+.page {
   h2 {
-  font-size: 3em;
-}
+    font-size: 3em;
+  }
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .menu {
-  width:60%;
-  
+  width: 60%;
+
   h3 {
     position: relative;
 
     &:after {
       content: "";
-
       position: absolute;
-      width: 1%;
+      width: 0%;
       height: 2px;
       display: block;
-       transition: width 500ms ease;
+      transition: width 500ms ease;
     }
     &:hover:after {
       width: 100%;
@@ -81,9 +81,9 @@
       font-size: 3em;
     }
 
-   span {
+    span {
       position: relative;
-     
+
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -97,7 +97,7 @@
 
     p {
       margin-bottom: 8px;
-   
+
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -110,6 +110,12 @@
   }
 }
 
+.menus--note
+{
+  background:#f5e7f3 ;
+}
+
+
 .menus--note h2,
 .menu--chic p {
   @include gradient-text(
@@ -121,7 +127,6 @@
 }
 
 //
-
 
 .fa-music {
   font-size: 8rem;
@@ -173,8 +178,22 @@
 .menu--palette-gout p {
   @include gradient-text($deg, $color4, $color5, $color6);
 }
+
+
+    //responsive
 @media all and (max-width: 767px) {
-  .menu {
-    margin: auto;
-  }
+  .menu, .page {
+    margin: 0 1em 5em 1em;
+    padding: 1em 1em 3em 1em;
+    flex-direction: column;
+    text-align: center;
+   
 }
+
+  }
+
+  @media (min-width: 1400px){
+.page {
+   font-size: 2.5em;
+
+}}

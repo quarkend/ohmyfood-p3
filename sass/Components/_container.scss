@@ -6,3 +6,15 @@
     max-width: 1200px;
     margin: auto;
   }
+  @media all and (max-width: 767px) {
+    .container{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-content: space-around;
+
+    margin: auto;
+    
+    }.menu__cover {
+       width: auto; 
+      text-align: center;}}
