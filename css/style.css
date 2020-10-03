@@ -7,11 +7,11 @@
 .ball-loader {
   border-radius: 5%/24%;
   padding: 1%;
-  width: 100px;
+  width: 70px;
   height: 23.3333333333px;
   position: absolute;
   top: 50%;
-  left: 75%;
+  left: 80%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
@@ -246,7 +246,7 @@ a {
   padding: 1% 2%;
   color: #FEC85F;
   background: #579C87;
-  width: 25%;
+  width: 28%;
 }
 
 /*****/
@@ -278,6 +278,10 @@ a {
     left: 80%;
   }
 }
+.soon > p {
+  margin: 0 0.3em 0 0;
+}
+
 .page {
   display: flex;
   flex-direction: column;
