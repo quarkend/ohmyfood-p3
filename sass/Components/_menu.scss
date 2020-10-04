@@ -58,7 +58,7 @@
 
   //code du style commun aux cover des menus
   &__cover {
-    width: 35%;
+    width: 40%;
     text-align: center;
   }
 
@@ -97,7 +97,7 @@
 
     p {
       margin-bottom: 8px;
-
+      text-align: start;
       display: flex;
       justify-content: space-between;
       align-items: center;

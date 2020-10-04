@@ -1,49 +1,44 @@
 .soon {
-    font-size: 1.6em;
-    justify-content: center;
-    margin: 1em 0 4em 1em;
-    border-radius: 1em;
-    padding: 1% 2%;
-    color: #FEC85F;
-    background: #579C87;
-    width: 28%;
+  font-size: 2em;
+  justify-content: center;
+  margin: 0em 0 2em 0;
 
-  }/*****/
-  
+  &__coming p {
+    border-radius: 5% / 24%;
+    padding: 3%;
 
-  
-  .soon, 
-  .footer__contact,
-  .footer__legal-notice {
-    position: relative;
+    color: #fec85f;
+    background: #579c87;
+    width: max-content;
   }
-  
-  
-  .footer__contact:hover,
-  .footer__legal-notice:hover {
-    -webkit-animation: wiggle 5s ease-in;
-    animation: wiggle 5s ease-in;
-  }
-  @media all and (max-width: 767px) {
-    
-    .soon{
-    width: 80%;
-     } }
+}
 
-     @media all and (max-width: 767px) {
-    
-      .ball-loader {
-        border-radius: 5%/24%;
-        padding: 1%;
-        width: 60px;
-        height: 23.3333333333px;
-        padding: 2% 8%;
-        top: 50%;
-        left: 80%;
-       } }
+.bubble {
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  border-radius: 50%;
+  background-color: #fec85f;
+}
 
-    
-       .soon > p {
-        margin: 0 0.3em 0 0;
-  
-       }
+.bubble-1 {
+  animation: pulse 0.4s ease 0s infinite alternate;
+}
+.bubble-2 {
+  animation: pulse 0.4s ease 0.2s infinite alternate;
+}
+.bubble-3 {
+  animation: pulse 0.4s ease 0.4s infinite alternate;
+}
+
+.soon,
+.footer__contact,
+.footer__legal-notice {
+  position: relative;
+}
+
+.footer__contact:hover,
+.footer__legal-notice:hover {
+  -webkit-animation: wiggle 5s ease-in;
+  animation: wiggle 5s ease-in;
+}

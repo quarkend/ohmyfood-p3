@@ -5,48 +5,7 @@
   }
   
 
-  .ball-loader {
-    border-radius: 5% / 24%;
-    padding: 1%;
-    width: 70px;
-    height: 23.3333333333px;
-    position: absolute;
-    top: 50%;
-    left: 80%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
   
-  .ball-loader-ball {
-    will-change: transform;
-    height: 23.3333333333px;
-    width: 23.3333333333px;
-    border-radius: 50%;
-    background-color: lightBlue;
-    position: absolute;
-    -webkit-animation: grow 1s ease-in-out infinite alternate;
-    animation: grow 1s ease-in-out infinite alternate;
-  }
-  
-  .ball-loader-ball.ball1 {
-    left: 0;
-    -webkit-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-  }
-  
-  .ball-loader-ball.ball2 {
-    left: 50%;
-    -webkit-transform: translateX(-50%) scale(1);
-    transform: translateX(-50%) scale(1);
-    -webkit-animation-delay: 0.33s;
-    animation-delay: 0.33s;
-  }
-  
-  .ball-loader-ball.ball3 {
-    right: 0;
-    -webkit-animation-delay: 0.66s;
-    animation-delay: 0.66s;
-  }
   
   @-webkit-keyframes grow {
     to {
