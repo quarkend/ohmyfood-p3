@@ -294,12 +294,12 @@ a {
 }
 .menu--chic p {
   font-family: "croissant one";
-  font-size: 40px;
+  font-size: 30px;
   color: #3d1319;
 }
 .menu--chic h3 {
   font-family: "Croissant One", cursive, sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   color: #c67412;
 }
 .menu--delice-papilles {
@@ -398,11 +398,11 @@ a {
   font-weight: bold;
 }
 
-.menus--note {
+.all-menus--note {
   background: #f5e7f3;
 }
 
-.menus--note h2,
+.all-menus--note h2,
 .menu--chic p {
   background: -webkit-linear-gradient(0deg, #c77412, #ac6baf, #934af8);
   -webkit-background-clip: text;

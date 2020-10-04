@@ -110,13 +110,19 @@
   }
 }
 
-.menus--note
+
+
+
+
+
+
+.all-menus--note
 {
   background:#f5e7f3 ;
 }
 
 
-.menus--note h2,
+.all-menus--note h2,
 .menu--chic p {
   @include gradient-text(
     $deg,
