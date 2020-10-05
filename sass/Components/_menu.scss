@@ -1,16 +1,12 @@
 .page {
   h2 {
-    font-size: 3em;
+    font-size: 2em;
   }
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
   text-align: center;
 }
 
 .menu {
-  width: 60%;
-
   h3 {
     position: relative;
 
@@ -27,12 +23,9 @@
     }
   }
 
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   box-shadow: 0px 0px 10px grey;
   padding: 5em;
-  margin: 0 14em 0em 14em;
+  margin: 0 14em 8em 14em;
   //ajout de la boucle pour chaque modificateur spécifique à chaque menu
   // la variable utilisée qui est une map est dans le fichier variables !
   @each $modificateur-name, $variation in $menu-variations {
@@ -100,7 +93,6 @@
       text-align: start;
       display: flex;
       justify-content: space-between;
-      align-items: center;
     }
 
     .price {
@@ -110,17 +102,9 @@
   }
 }
 
-
-
-
-
-
-
-.all-menus--note
-{
-  background:#f5e7f3 ;
+.all-menus--note {
+  background: #f5e7f3;
 }
-
 
 .all-menus--note h2,
 .menu--chic p {
@@ -153,7 +137,7 @@
     font-size: 2rem;
   }
 
-  &__title {
+  span {
     font-family: "Dancing Script", cursive;
     font-size: 2rem;
   }
@@ -185,21 +169,40 @@
   @include gradient-text($deg, $color4, $color5, $color6);
 }
 
-
-    //responsive
-@media all and (max-width: 767px) {
-  .menu, .page {
+//responsive
+@media all and (max-width: 1024px) {
+  .menu,
+  .page {
     margin: 0 1em 5em 1em;
-    padding: 1em 1em 3em 1em;
+    padding: 1em 1em 2em 1em;
     flex-direction: column;
     text-align: center;
-   
+  }
 }
 
+@media (min-width: 2000px) {
+  .page {
+    font-size: 2.5em;
   }
-
-  @media (min-width: 1400px){
-.page {
-   font-size: 2.5em;
-
-}}
+}
+@media all and (max-width: 520px) {
+  
+  .page {
+    margin: auto;
+    padding: 1em;
+    flex-direction: column;
+    text-align: center;
+    h2{
+      font-size: 2em;
+    }
+  }
+}
+@media all and (max-width: 320px) {
+  
+  .page {
+  
+    h2{
+      font-size: 1em;
+    }
+  }
+}
