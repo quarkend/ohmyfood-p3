@@ -364,9 +364,6 @@ a {
   display: flex;
   flex-direction: column;
 }
-.menu__step h2 {
-  font-size: 3em;
-}
 .menu__step span {
   position: relative;
   display: flex;
@@ -501,7 +498,7 @@ a {
   }
 
   .menu__cover {
-    width: auto;
+    width: 80%;
     text-align: center;
   }
 }

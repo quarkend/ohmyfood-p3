@@ -70,9 +70,6 @@
   &__step {
     display: flex;
     flex-direction: column;
-    h2 {
-      font-size: 3em;
-    }
 
     span {
       position: relative;
@@ -186,22 +183,19 @@
   }
 }
 @media all and (max-width: 520px) {
-  
   .page {
     margin: auto;
     padding: 1em;
     flex-direction: column;
     text-align: center;
-    h2{
+    h2 {
       font-size: 2em;
     }
   }
 }
 @media all and (max-width: 768px) {
-  
   .page {
-  
-    h2{
+    h2 {
       font-size: 1em;
     }
   }
