@@ -468,7 +468,7 @@ a {
     font-size: 2em;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 768px) {
   .page h2 {
     font-size: 1em;
   }
