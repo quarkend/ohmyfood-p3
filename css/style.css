@@ -267,9 +267,9 @@ footer a {
   padding: 5em;
   margin: 0 14em 8em 14em;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .menu {
-    margin: 0 0em 4em 0em;
+    margin: 0 0em 10em 0em;
     padding: 1em 1em 2em 1em;
     flex-direction: column;
     text-align: center;

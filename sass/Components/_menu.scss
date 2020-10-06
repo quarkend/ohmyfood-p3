@@ -21,10 +21,10 @@
 }
 
 .menu {
-  @include respond-to ("medium")
+  @include respond-to ("large")
   {
     
-      margin: 0 0em 4em 0em;
+      margin: 0 0em 10em 0em;
       padding: 1em 1em 2em 1em;
       flex-direction: column;
       text-align: center;
