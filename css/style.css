@@ -1,3 +1,4 @@
+/* breakpoint*/
 .menu__cover:hover a {
   transform: scale(1.2);
   transition: transform 0.6s ease-in-out;
@@ -153,25 +154,31 @@ a {
   text-decoration: none;
 }
 
-.footer {
-  height: 70px;
+footer {
   display: flex;
-  align-items: center;
-  background-color: #579c87;
-  border-top: 3px solid #a1c181;
-  position: fixed;
   justify-content: space-between;
+  position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
-  font-size: 1.6em;
-  font-family: "Roboto", sans-serif;
-  margin: 0em;
+  width: 100%;
+  background-color: #579c87;
+  border-top: 1px solid #a1c181;
 }
-.footer a {
+@media (max-width: 767px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+footer a {
   color: #fec85f;
   font-family: "roboto", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+}
+@media (max-width: 767px) {
+  footer a {
+    justify-content: center;
+    font-size: 1.3rem;
+  }
 }
 
 .header {
@@ -189,12 +196,12 @@ a {
   font-size: 5rem;
   text-align: center;
 }
-
-@media all and (max-width: 767px) {
+@media (max-width: 767px) {
   .header h1 {
     font-size: 3em;
   }
 }
+
 .soon {
   font-size: 2em;
   justify-content: center;
@@ -229,13 +236,11 @@ a {
 }
 
 .soon,
-.footer__contact,
-.footer__legal-notice {
+.footer p {
   position: relative;
 }
 
-.footer__contact:hover,
-.footer__legal-notice:hover {
+.footer :hover {
   -webkit-animation: wiggle 5s ease-in;
   animation: wiggle 5s ease-in;
 }
@@ -243,14 +248,32 @@ a {
 .page {
   text-align: center;
 }
+@media (min-width: 2000px) {
+  .page {
+    font-size: 2.5em;
+  }
+}
 .page h2 {
   font-size: 2em;
+}
+@media (max-width: 320px) {
+  .page h2 {
+    font-size: 1.3rem;
+  }
 }
 
 .menu {
   box-shadow: 0px 0px 10px grey;
   padding: 5em;
   margin: 0 14em 8em 14em;
+}
+@media (max-width: 992px) {
+  .menu {
+    margin: 0 0em 4em 0em;
+    padding: 1em 1em 2em 1em;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .menu h3 {
   position: relative;
@@ -440,36 +463,6 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
-@media all and (max-width: 1024px) {
-  .menu,
-.page {
-    margin: 0 1em 5em 1em;
-    padding: 1em 1em 2em 1em;
-    flex-direction: column;
-    text-align: center;
-  }
-}
-@media (min-width: 2000px) {
-  .page {
-    font-size: 2.5em;
-  }
-}
-@media all and (max-width: 520px) {
-  .page {
-    margin: auto;
-    padding: 1em;
-    flex-direction: column;
-    text-align: center;
-  }
-  .page h2 {
-    font-size: 2em;
-  }
-}
-@media all and (max-width: 768px) {
-  .page h2 {
-    font-size: 1em;
-  }
-}
 .card {
   min-height: 500px;
   display: flex;
@@ -488,16 +481,14 @@ a {
   max-width: 1200px;
   margin: auto;
 }
-
-@media all and (max-width: 767px) {
+@media (max-width: 767px) {
   .container {
     display: flex;
     justify-content: space-evenly;
     align-content: space-around;
-    margin: auto;
+    margin-bottom: 3em;
   }
-
-  .menu__cover {
+  .container .menu__cover {
     width: 80%;
     text-align: center;
   }

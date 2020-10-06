@@ -32,13 +32,12 @@
 }
 
 .soon,
-.footer__contact,
-.footer__legal-notice {
+.footer p {
   position: relative;
 }
 
-.footer__contact:hover,
-.footer__legal-notice:hover {
+
+.footer  :hover {
   -webkit-animation: wiggle 5s ease-in;
   animation: wiggle 5s ease-in;
 }

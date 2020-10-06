@@ -6,6 +6,34 @@
   -webkit-text-fill-color: transparent;
 }
 
-$color4:rgba(94, 255, 0, 0.445);
-$color5:rgba(0, 255, 21, 0.842);
-$color6:rgb(0, 255, 42);
+// Mixin to manage responsive breakpoints
+
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+ 
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+  $breakpoints: (
+    'mini':   ( max-width: 320px ),
+    'small':  ( max-width: 767px ),
+    'medium': ( max-width: 992px ),
+    'large':  ( max-width: 1200px ),
+    'x-large': (min-width:2000px)
+  ) !default;
+  
+  // @mixin menu-style($font-size: initial, $text-align: center){
+  
+    
+  //   font: $font-size ;
+  //   text-align: $text-align;
+  // }

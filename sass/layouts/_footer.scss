@@ -1,25 +1,25 @@
-.footer{
-    height: 70px;
-    display: flex;
-    align-items: center;
-    background-color:$color-bar ;
-    border-top: 3px solid #a1c181;
-    position: fixed;
-justify-content: space-between;
-bottom: 0;
-left: 0;
-right: 0;  
-font-size: 1.6em;
-font-family: "Roboto", sans-serif;
-margin: 0em;
-    a{
-        color: $color-bar-font;
-        font-family:"roboto", sans-serif;
-        font-size: 1.5rem;
-    }
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: $color-bar;
+  border-top: 1px solid #a1c181;
 
-  
-    }
+  @include respond-to("small") {
  
+    flex-direction: column;
+    text-align: center;
+  }
+  a {
+    color: #fec85f;
+    font-family: "roboto", sans-serif;
+    font-size: 1.6rem;
+    @include respond-to("small") {
     
-        
+      justify-content: center;
+      font-size: 1.3rem;
+    }
+  }
+}

@@ -16,14 +16,9 @@
         font-size: 5rem;
     
         text-align: center;
+        @include respond-to ( 'small'){
+        font-size:3em;
     }
 }
-@media all and (max-width: 767px) {
-    
-    .header h1{
-     font-size: 3em;
-     
-  }
-  
-    }
+}
   
