@@ -96,7 +96,6 @@
       overflow: hidden;
       margin: 1 0em;
     }
-
     p {
       margin-bottom: 8px;
       text-align: start;
@@ -116,27 +115,13 @@
     }
   }
 }
-
+// La note enchantee
 .all-menus--note {
   background: #f5e7f3;
 }
-
-.all-menus--note h2,
-.menu--chic p {
-  @include gradient-text(
-    $deg,
-    $chic-gradient-color1,
-    $chic-gradient-color2,
-    $chic-gradient-color3
-  );
-}
-
-//
-
 .fa-music {
   font-size: 6em;
-  @include respond-to ("mini")
-  {
+  @include respond-to("") {
     font-size: 3em;
   }
   background: -webkit-gradient(
@@ -146,7 +131,10 @@
     from(#f15c61),
     to(#f6916a)
   );
-  background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
+  background: linear-gradient(
+    to right,
+     #f15c61 0%,
+      #f6916a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -161,6 +149,17 @@
     font-size: 2rem;
   }
 }
+//Menu chic
+.all-menus--chic h2,
+.menu--chic p {
+  @include gradient-text(
+    $deg,
+    $chic-gradient-color1,
+    $chic-gradient-color2,
+    $chic-gradient-color3
+  );
+}
+
 //// menu--papilles
 .menu--papilles {
   background-color: #f9f9f9;
@@ -170,20 +169,31 @@
       font-family: sans-serif;
       font-size: 3rem;
 
-      background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      background: -webkit-linear-gradient(
+        0deg,
+         #0229dd, 
+         #0665f0,
+          #0889fb);
+
     }
   }
 }
-.menu--delice-papilles h3,
-.menu--delice-papilles p {
-  background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+.menu--delice-papilles a {
+  background: -webkit-linear-gradient(
+    0deg,
+     #0229dd,
+      #0665f0,
+       #0889fb);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
 }
 //PALETTE DU GOU
-.menu--palette-gout h3,
-.menu--palette-gout p {
-  @include gradient-text($deg, $color4, $color5, $color6);
+.all-menus--gout h2,
+.menu--palette-gout a {
+  @include gradient-text(
+    $deg,
+     $color4,
+      $color5,
+       $color6);
 }

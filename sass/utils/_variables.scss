@@ -14,16 +14,16 @@ $chic-gradient-color1: rgb(199, 116, 18);
 $chic-gradient-color2: rgb(172, 107, 175);
 $chic-gradient-color3: rgb(147, 74, 248);
 $deg: (0deg);
+// gout
 $color4:rgba(94, 255, 0, 0.445);
 $color5:rgba(0, 255, 21, 0.842);
 $color6:rgb(0, 255, 42);
-
 $menu-colors: (
   note:(
   color: black,
   ),
   one: (
-    color: orange,
+    color: rgb(199, 116, 18),
   ),
   too: (
     color: rgb(172, 107, 175),
@@ -39,6 +39,9 @@ $menu-colors: (
   ),
   six: (
     color: rgb(0, 153, 255),
+  ),
+  gout: (
+    color: rgb(8, 8, 8),
   ),
 );
 

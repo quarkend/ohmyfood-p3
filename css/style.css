@@ -357,10 +357,10 @@ footer a {
   background-color: black;
 }
 .menu__detail--one {
-  color: orange;
+  color: #c77412;
 }
 .menu__detail--one h3::after {
-  background-color: orange;
+  background-color: #c77412;
 }
 .menu__detail--too {
   color: #ac6baf;
@@ -391,6 +391,12 @@ footer a {
 }
 .menu__detail--six h3::after {
   background-color: #0099ff;
+}
+.menu__detail--gout {
+  color: #080808;
+}
+.menu__detail--gout h3::after {
+  background-color: #080808;
 }
 .menu__step {
   display: flex;
@@ -431,24 +437,12 @@ footer a {
   background: #f5e7f3;
 }
 
-.all-menus--note h2,
-.menu--chic p {
-  background: -webkit-linear-gradient(0deg, #c77412, #ac6baf, #934af8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .fa-music {
   font-size: 6em;
   background: -webkit-gradient(linear, left top, right top, from(#f15c61), to(#f6916a));
   background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-@media (max-width: 320px) {
-  .fa-music {
-    font-size: 3em;
-  }
 }
 
 .last-title .music-icon {
@@ -459,6 +453,13 @@ footer a {
   font-size: 2rem;
 }
 
+.all-menus--chic h2,
+.menu--chic p {
+  background: -webkit-linear-gradient(0deg, #c77412, #ac6baf, #934af8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .menu--papilles {
   background-color: #f9f9f9;
   color: #20201d;
@@ -467,19 +468,16 @@ footer a {
   font-family: sans-serif;
   font-size: 3rem;
   background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
-.menu--delice-papilles h3,
-.menu--delice-papilles p {
+.menu--delice-papilles a {
   background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.menu--palette-gout h3,
-.menu--palette-gout p {
+.all-menus--gout h2,
+.menu--palette-gout a {
   background: -webkit-linear-gradient(0deg, rgba(94, 255, 0, 0.445), rgba(0, 255, 21, 0.842), #00ff2a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
