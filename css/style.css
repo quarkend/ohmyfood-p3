@@ -350,6 +350,12 @@ footer a {
   width: 40%;
   text-align: center;
 }
+.menu__detail--note {
+  color: black;
+}
+.menu__detail--note h3::after {
+  background-color: black;
+}
 .menu__detail--one {
   color: orange;
 }
