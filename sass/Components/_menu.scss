@@ -4,7 +4,7 @@
     font-size: 2.5em;
   }
   h2 {
-    font-size: 2em;
+    font-size: 3em;
     @include respond-to("mini") {
       font-size: 1.3rem;
     }
@@ -13,7 +13,7 @@
 .menu {
   box-shadow: 0px 0px 10px grey;
   padding: 3em;
-  margin: 0 8em 8em 8em;
+  margin: 0 12em 8em 12em;
   @include respond-to("medium") {
     margin: 0em 5em 10em 5em;
     padding: 1em 1em 2em 1em;
@@ -29,7 +29,7 @@
       content: "";
       position: absolute;
       width: 0%;
-      height: 2px;
+      height: 4px;
       display: block;
       transition: width 500ms ease;
     }
@@ -82,10 +82,8 @@
   &__step {
     display: flex;
     flex-direction: column;
-
+    font-size: 1.6em;
     span {
-      position: relative;
-
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -104,7 +102,6 @@
     }
     &__dishes {
       padding: 0 3em 0 3em;
-
       @include respond-to("mini") {
         padding: 0em;
       }
@@ -118,12 +115,12 @@
 // La note enchantee
 .all-menus--note {
   background: #f5e7f3;
+  font-family: "Devonshire", cursive, sans-serif;
+  h2 {
+    color:#3d1319; 
+  }
 }
 .fa-music {
-  font-size: 6em;
-  @include respond-to("") {
-    font-size: 3em;
-  }
   background: -webkit-gradient(
     linear,
     left top,
@@ -131,24 +128,16 @@
     from(#f15c61),
     to(#f6916a)
   );
-  background: linear-gradient(
-    to right,
-     #f15c61 0%,
-      #f6916a 100%);
+  background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.last-title {
-  .music-icon {
-    font-size: 2rem;
-  }
-
-  span {
-    font-family: "Dancing Script", cursive;
-    font-size: 2rem;
-  }
+.last-title, .music-icon {
+  font-size: 4rem;
 }
+
+
 //Menu chic
 .all-menus--chic h2,
 .menu--chic p {
@@ -161,39 +150,36 @@
 }
 
 //// menu--papilles
-.menu--papilles {
+.all-menus--papilles {
   background-color: #f9f9f9;
-  color: rgb(32, 32, 29);
+  font-family: "don", cursive;
+  p {
+    color: rgb(32, 32, 29);
+  }
   .top-title {
     h2 {
-      font-family: sans-serif;
+      font-family: "Dancing Script", cursive;
       font-size: 3rem;
 
-      background: -webkit-linear-gradient(
-        0deg,
-         #0229dd, 
-         #0665f0,
-          #0889fb);
-
+      background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 }
 
 .menu--delice-papilles a {
-  background: -webkit-linear-gradient(
-    0deg,
-     #0229dd,
-      #0665f0,
-       #0889fb);
-       -webkit-background-clip: text;
-       -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 //PALETTE DU GOU
+
+.all-menus--gout {
+  font-family: "Kaushan Script", cursive;
+}
+
 .all-menus--gout h2,
 .menu--palette-gout a {
-  @include gradient-text(
-    $deg,
-     $color4,
-      $color5,
-       $color6);
+  @include gradient-text($deg, $color4, $color5, $color6);
 }

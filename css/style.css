@@ -254,7 +254,7 @@ footer a {
   }
 }
 .page h2 {
-  font-size: 2em;
+  font-size: 3em;
 }
 @media (max-width: 320px) {
   .page h2 {
@@ -265,7 +265,7 @@ footer a {
 .menu {
   box-shadow: 0px 0px 10px grey;
   padding: 3em;
-  margin: 0 8em 8em 8em;
+  margin: 0 12em 8em 12em;
 }
 @media (max-width: 1024px) {
   .menu {
@@ -285,7 +285,7 @@ footer a {
   content: "";
   position: absolute;
   width: 0%;
-  height: 2px;
+  height: 4px;
   display: block;
   transition: width 500ms ease;
 }
@@ -351,10 +351,10 @@ footer a {
   text-align: center;
 }
 .menu__detail--note {
-  color: black;
+  color: #3d1319;
 }
 .menu__detail--note h3::after {
-  background-color: black;
+  background-color: #3d1319;
 }
 .menu__detail--one {
   color: #c77412;
@@ -401,9 +401,9 @@ footer a {
 .menu__step {
   display: flex;
   flex-direction: column;
+  font-size: 1.6em;
 }
 .menu__step span {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -435,22 +435,21 @@ footer a {
 
 .all-menus--note {
   background: #f5e7f3;
+  font-family: "Devonshire", cursive, sans-serif;
+}
+.all-menus--note h2 {
+  color: #3d1319;
 }
 
 .fa-music {
-  font-size: 6em;
   background: -webkit-gradient(linear, left top, right top, from(#f15c61), to(#f6916a));
   background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.last-title .music-icon {
-  font-size: 2rem;
-}
-.last-title span {
-  font-family: "Dancing Script", cursive;
-  font-size: 2rem;
+.last-title, .music-icon {
+  font-size: 4rem;
 }
 
 .all-menus--chic h2,
@@ -460,14 +459,19 @@ footer a {
   -webkit-text-fill-color: transparent;
 }
 
-.menu--papilles {
+.all-menus--papilles {
   background-color: #f9f9f9;
+  font-family: "don", cursive;
+}
+.all-menus--papilles p {
   color: #20201d;
 }
-.menu--papilles .top-title h2 {
-  font-family: sans-serif;
+.all-menus--papilles .top-title h2 {
+  font-family: "Dancing Script", cursive;
   font-size: 3rem;
   background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu--delice-papilles a {
@@ -476,9 +480,13 @@ footer a {
   -webkit-text-fill-color: transparent;
 }
 
+.all-menus--gout {
+  font-family: "Kaushan Script", cursive;
+}
+
 .all-menus--gout h2,
 .menu--palette-gout a {
-  background: -webkit-linear-gradient(0deg, rgba(94, 255, 0, 0.445), rgba(0, 255, 21, 0.842), #00ff2a);
+  background: -webkit-linear-gradient(0deg, #00ff2a, rgba(157, 255, 0, 0.863), rgba(2, 85, 22, 0.808));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
