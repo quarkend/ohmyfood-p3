@@ -427,6 +427,30 @@ footer a {
   font-weight: bold;
 }
 
+.category01 {
+  background: -webkit-linear-gradient(0deg, #3d1319, #ac3e3e, #f6916a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.category02 {
+  background: -webkit-linear-gradient(0deg, #772be0, #c77412, #c77412);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.category03 {
+  background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.category04 {
+  background: -webkit-linear-gradient(0deg, #00ff2a, rgba(157, 255, 0, 0.863), rgba(2, 85, 22, 0.808));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .all-menus--note {
   background: #fcdfdb;
   font-family: "Devonshire", cursive, sans-serif;
@@ -453,40 +477,14 @@ footer a {
 .all-menus--chic {
   background: #fff5fe;
 }
-
-.all-menus--papilles {
+.all-menus--chic--papilles {
   background-color: #edefef;
 }
-.all-menus--papilles p {
+.all-menus--chic--papilles p {
   color: #20201d;
 }
-
-.all-menus--gout {
+.all-menus--chic--gout {
   font-family: "Kaushan Script", cursive;
-}
-
-.category01 {
-  background: -webkit-linear-gradient(0deg, #3d1319, #ac3e3e, #f6916a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.category02 {
-  background: -webkit-linear-gradient(0deg, #772be0, #c77412, #c77412);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.category03 {
-  background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.category04 {
-  background: -webkit-linear-gradient(0deg, #00ff2a, rgba(157, 255, 0, 0.863), rgba(2, 85, 22, 0.808));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .card {
