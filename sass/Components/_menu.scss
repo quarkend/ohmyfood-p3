@@ -65,8 +65,7 @@
     width: 40%;
     text-align: center;
   }
-
-  &__detail {
+&__detail {
     @each $modificateur-name, $color in $menu-colors {
       &--#{$modificateur-name} {
         color: map-get($color, color);
@@ -114,14 +113,12 @@
 
 @each $category in $color-categories {
   $i: index($color-categories, $category);
-
   .category0#{$i} {
     @if length($category) == 2 {
       background: -webkit-linear-gradient(nth($category, 1), nth($category, 2));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-
     @if length($category) == 3 {
       background: -webkit-linear-gradient(
         nth($category, 1),
@@ -145,14 +142,27 @@
     //boucle liner gradient
   }
 }
-// La note enchantee
+//all menu
 .all-menus--note {
   background: #fcdfdb;
   font-family: "Devonshire", cursive, sans-serif;
   h2 {
     color: #3d1319;
   }
+  &--chic {
+    background: #fff5fe;
+    &--papilles {
+      background-color: #edefef;
+      p {
+        color: rgb(32, 32, 29);
+      }
+    }
+    &--gout {
+      font-family: "Kaushan Script", cursive;
+    }
+  }
 }
+//icon music
 .menu--enchantee img {
   width: 4em;
 }
@@ -166,20 +176,4 @@
   span {
     font-size: 2em;
   }
-}
-//all menu
-.all-menus--chic {
-  background: #fff5fe;
-
-&--papilles {
-  background-color: #edefef;
-
-  p {
-    color: rgb(32, 32, 29);
-  }
-}
-
-&--gout {
-  font-family: "Kaushan Script", cursive;
-}
 }

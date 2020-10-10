@@ -1,24 +1,18 @@
-.header{
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:$color-bar;
-    border-bottom: 3px solid #76ad3e;
-    
-    //add space between header and main body
-    margin-bottom: 60px;
-    
-
-    h1{
-        color:$color-bar-font;
-        font-family: 'Montserrat', serif;
-        font-size: 5rem;
-    
-        text-align: center;
-        @include respond-to ( 'small'){
-        font-size:3em;
+.header {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-bar;
+  border-bottom: 3px solid #76ad3e;
+  margin-bottom: 60px;
+  h1 {
+    color: $color-bar-font;
+    font-family: "Montserrat", serif;
+    font-size: 5rem;
+    text-align: center;
+    @include respond-to("small") {
+      font-size: 3em;
     }
+  }
 }
-}
-  

@@ -1,5 +1,21 @@
 /* breakpoint*/
-
+$breakpoints: (
+  "mini": (
+    max-width: 320px,
+  ),
+  "small": (
+    max-width: 767px,
+  ),
+  "medium": (
+    max-width: 1024px,
+  ),
+  "large": (
+    max-width: 1200px,
+  ),
+  "x-large": (
+    min-width: 2000px,
+  ),
+) !default;
 
 // Header Footer
 $color-bar-font: #fec85f;
@@ -7,12 +23,10 @@ $color-card: #7c2f3c;
 $color-bar: #579c87;
 $body-bkg: rgb(255, 255, 255);
 $box-shadow-menu: 0 0 10px rgba(0, 0, 0, 0.247);
-// CHIC
-$chic-bkg-color: rgb(255, 245, 254);
 
 $menu-colors: (
-  note:(
-  color: #3d1319,
+  note: (
+    color: #3d1319,
   ),
   one: (
     color: rgb(199, 116, 18),
@@ -40,13 +54,12 @@ $menu-colors: (
 $menu-variations: (
   enchantee: (
     background-color: #fcdfdb,
-    // text-color-p: #3d1319,
-    // text-color-h3: #3d1319,
-    font-family-p: (
-      "Devonshire",
-      cursive,
-      sans-serif,
-    ),
+    font-family-p:
+      (
+        "Devonshire",
+        cursive,
+        sans-serif,
+      ),
     font-family-h3: (
       "Handlee",
       cursive,
@@ -59,11 +72,10 @@ $menu-variations: (
   ),
   chic: (
     background-color: #fff5fe,
-    // text-color-p: black,
-    // text-color-h3: #c67412,
-    font-family-p: (
-      "croissant one",
-    ),
+    font-family-p:
+      (
+        "croissant one",
+      ),
     font-family-h3: (
       "Croissant One",
       cursive,
@@ -74,12 +86,11 @@ $menu-variations: (
   ),
   delice-papilles: (
     background-color: #edefef,
-
-    // text-color-h3: #3d1319,
-    font-family-p: (
-      "Dancing Script",
-      cursive,
-    ),
+    font-family-p:
+      (
+        "Dancing Script",
+        cursive,
+      ),
     font-family-h3: (
       "Handlee",
       cursive,
@@ -90,12 +101,11 @@ $menu-variations: (
   ),
   palette-gout: (
     background-color: #fdfffd,
-    // text-color-p: #3d1319,
-    // text-color-h3: #3d1319,
-    font-family-p: (
-      "Dancing Script",
-      cursive,
-    ),
+    font-family-p:
+      (
+        "Dancing Script",
+        cursive,
+      ),
     font-family-h3: (
       "Handlee",
       cursive,
@@ -105,11 +115,17 @@ $menu-variations: (
     font-size-h3: 40px,
   ),
 );
-$colors-category01: ( 0deg, #3d1319,#ac3e3e , #f6916a );
-$colors-category02: (0deg,rgb(119, 43, 224), rgb(199, 116, 18) ),rgb(199, 116, 18);
-$colors-category03: ( 0deg, #0229dd, #0665f0, #0889fb);
-$colors-category04: (0deg, #00ff2a, rgba(157, 255, 0, 0.863), rgba(2, 85, 22, 0.808));
+// la boucle @each avec  index ; les variables ou il y une liste de coleurs 
+$colors-category01: (0deg, #3d1319, #ac3e3e, #f6916a);
+$colors-category02: (0deg, rgb(119, 43, 224), rgb(199, 116, 18)),
+  rgb(199, 116, 18);
+$colors-category03: (0deg, #0229dd, #0665f0, #0889fb);
+$colors-category04: (
+  0deg,
+  #00ff2a,
+  rgba(157, 255, 0, 0.863),
+  rgba(2, 85, 22, 0.808)
+);
 
-$color-categories: $colors-category01, $colors-category02, $colors-category03, $colors-category04;
-
-
+$color-categories: $colors-category01, $colors-category02, $colors-category03,
+  $colors-category04;

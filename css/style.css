@@ -458,6 +458,18 @@ footer a {
 .all-menus--note h2 {
   color: #3d1319;
 }
+.all-menus--note--chic {
+  background: #fff5fe;
+}
+.all-menus--note--chic--papilles {
+  background-color: #edefef;
+}
+.all-menus--note--chic--papilles p {
+  color: #20201d;
+}
+.all-menus--note--chic--gout {
+  font-family: "Kaushan Script", cursive;
+}
 
 .menu--enchantee img {
   width: 4em;
@@ -472,19 +484,6 @@ footer a {
 }
 .last-title span {
   font-size: 2em;
-}
-
-.all-menus--chic {
-  background: #fff5fe;
-}
-.all-menus--chic--papilles {
-  background-color: #edefef;
-}
-.all-menus--chic--papilles p {
-  color: #20201d;
-}
-.all-menus--chic--gout {
-  font-family: "Kaushan Script", cursive;
 }
 
 .card {
