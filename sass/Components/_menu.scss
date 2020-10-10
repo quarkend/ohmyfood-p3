@@ -7,6 +7,7 @@
     font-size: 3em;
     @include respond-to("mini") {
       font-size: 1.3rem;
+      margin-top: 0em;
     }
   }
 }
@@ -94,7 +95,7 @@
       margin-bottom: auto;
     }
     img {
-      width: 30%;
+      width: 35%;
       overflow: hidden;
       margin: 1 0em;
     }
@@ -116,6 +117,11 @@
     }
   }
 }
+
+
+
+
+
 // La note enchantee
 .all-menus--note {
   background: #fcdfdb;
@@ -126,11 +132,26 @@
  
 }
 
-.last-title, .music-icon {
-  font-size: 4rem;
+
+
+.menu--enchantee img{
+  width: 4em;
 }
 
 
+
+.top-title img {
+  width: 4em;
+}
+.last-title  {
+
+  img  {
+  width: 3em;
+  }
+ span {
+  font-size: 2em;
+}
+}
 //Menu chic
 .all-menus--chic
 {
@@ -160,7 +181,7 @@
 @each $category in $color-categories {
   $i: index($color-categories, $category);
 
-  .category0#{$i}  {
+  .category0#{$i} {
         @if length($category) == 2{
              background: -webkit-linear-gradient(nth($category, 1), nth($category, 2));
              -webkit-background-clip: text;

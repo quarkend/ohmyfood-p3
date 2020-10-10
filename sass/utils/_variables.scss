@@ -40,8 +40,8 @@ $menu-colors: (
 $menu-variations: (
   enchantee: (
     background-color: #fcdfdb,
-    text-color-p: #3d1319,
-    text-color-h3: #3d1319,
+    // text-color-p: #3d1319,
+    // text-color-h3: #3d1319,
     font-family-p: (
       "Devonshire",
       cursive,
@@ -55,12 +55,12 @@ $menu-variations: (
     font-size-p: 40px,
     font-size-h2: 40px,
     font-size-h3: 40px,
-    //tu peux aussi imaginer entrer des couleurs pour faire les dégradés par exemple....
+    //
   ),
   chic: (
     background-color: #fff5fe,
-    text-color-p:( #0005de, #12dfff),
-    text-color-h3: #c67412,
+    // text-color-p: black,
+    // text-color-h3: #c67412,
     font-family-p: (
       "croissant one",
     ),
@@ -75,7 +75,7 @@ $menu-variations: (
   delice-papilles: (
     background-color: #edefef,
 
-    text-color-h3: #3d1319,
+    // text-color-h3: #3d1319,
     font-family-p: (
       "Dancing Script",
       cursive,
@@ -90,8 +90,8 @@ $menu-variations: (
   ),
   palette-gout: (
     background-color: #fdfffd,
-    text-color-p: #3d1319,
-    text-color-h3: #3d1319,
+    // text-color-p: #3d1319,
+    // text-color-h3: #3d1319,
     font-family-p: (
       "Dancing Script",
       cursive,

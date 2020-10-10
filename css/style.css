@@ -1,8 +1,8 @@
 /* breakpoint*/
-.menu__cover:hover a {
+.menu__cover span:hover {
   transform: scale(1.2);
   transition: transform 0.6s ease-in-out;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 @-webkit-keyframes grow {
@@ -259,6 +259,7 @@ footer a {
 @media (max-width: 320px) {
   .page h2 {
     font-size: 1.3rem;
+    margin-top: 0em;
   }
 }
 
@@ -305,7 +306,6 @@ footer a {
 .menu--enchantee h3 {
   font-family: "Handlee", cursive, sans-serif;
   font-size: 40px;
-  color: #3d1319;
 }
 .menu--chic {
   background-color: #fff5fe;
@@ -317,7 +317,6 @@ footer a {
 .menu--chic h3 {
   font-family: "Croissant One", cursive, sans-serif;
   font-size: 35px;
-  color: #c67412;
 }
 .menu--delice-papilles {
   background-color: #edefef;
@@ -329,7 +328,6 @@ footer a {
 .menu--delice-papilles h3 {
   font-family: "Handlee", cursive, sans-serif;
   font-size: 40px;
-  color: #3d1319;
 }
 .menu--palette-gout {
   background-color: #fdfffd;
@@ -341,7 +339,6 @@ footer a {
 .menu--palette-gout h3 {
   font-family: "Handlee", cursive, sans-serif;
   font-size: 40px;
-  color: #3d1319;
 }
 .menu__cover {
   width: 40%;
@@ -407,7 +404,7 @@ footer a {
   margin-bottom: auto;
 }
 .menu__step img {
-  width: 30%;
+  width: 35%;
   overflow: hidden;
   margin: 1 0em;
 }
@@ -438,8 +435,19 @@ footer a {
   color: #3d1319;
 }
 
-.last-title, .music-icon {
-  font-size: 4rem;
+.menu--enchantee img {
+  width: 4em;
+}
+
+.top-title img {
+  width: 4em;
+}
+
+.last-title img {
+  width: 3em;
+}
+.last-title span {
+  font-size: 2em;
 }
 
 .all-menus--chic {

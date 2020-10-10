@@ -1,7 +1,7 @@
-.menu__cover:hover a {
+.menu__cover span:hover {
     transform: scale(1.2);
     transition: transform 0.6s ease-in-out;
-    opacity: 0.3;
+    opacity: 0.5;
   }
   
 
