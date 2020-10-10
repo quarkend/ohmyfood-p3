@@ -1,5 +1,5 @@
 /* breakpoint*/
-.menu__cover span:hover {
+.menu__cover div:hover {
   transform: scale(1.2);
   transition: transform 0.6s ease-in-out;
   opacity: 0.5;
