@@ -38,8 +38,9 @@
     }
   }
 
-  //ajout de la boucle pour chaque modificateur spécifique à chaque menu
-  // la variable utilisée qui est une map est dans le fichier variables !
+ 
+
+
   @each $modificateur-name, $variation in $menu-variations {
     &--#{$modificateur-name} {
       background-color: map-get($variation, background-color);
@@ -47,8 +48,11 @@
       p {
         font-family: map-get($variation, font-family-p);
         font-size: map-get($variation, font-size-p);
-        color: map-get($variation, text-color-p);
+       
+        
+
       }
+      
       h2 {
         font-size: map-get($variation, font-size-h2);
       }
@@ -90,7 +94,7 @@
       margin-bottom: auto;
     }
     img {
-      width: auto;
+      width: 30%;
       overflow: hidden;
       margin: 1 0em;
     }
@@ -114,23 +118,12 @@
 }
 // La note enchantee
 .all-menus--note {
-  background: #f5e7f3;
+  background: #fcdfdb;
   font-family: "Devonshire", cursive, sans-serif;
-  h2 {
-    color:#3d1319; 
+  h2{
+    color: #3d1319;
   }
-}
-.fa-music {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#f15c61),
-    to(#f6916a)
-  );
-  background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+ 
 }
 
 .last-title, .music-icon {
@@ -139,47 +132,53 @@
 
 
 //Menu chic
-.all-menus--chic h2,
-.menu--chic p {
-  @include gradient-text(
-    $deg,
-    $chic-gradient-color1,
-    $chic-gradient-color2,
-    $chic-gradient-color3
-  );
+.all-menus--chic
+{
+  background: #fff5fe;
 }
+
 
 //// menu--papilles
 .all-menus--papilles {
-  background-color: #f9f9f9;
-  font-family: "don", cursive;
+  background-color: #edefef;
+  
   p {
     color: rgb(32, 32, 29);
   }
-  .top-title {
-    h2 {
-      font-family: "Dancing Script", cursive;
-      font-size: 3rem;
-
-      background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  }
+ 
 }
 
-.menu--delice-papilles a {
-  background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 //PALETTE DU GOU
 
 .all-menus--gout {
   font-family: "Kaushan Script", cursive;
 }
 
-.all-menus--gout h2,
-.menu--palette-gout a {
-  @include gradient-text($deg, $color4, $color5, $color6);
+
+
+@each $category in $color-categories {
+  $i: index($color-categories, $category);
+
+  .category0#{$i}  {
+        @if length($category) == 2{
+             background: -webkit-linear-gradient(nth($category, 1), nth($category, 2));
+             -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
+           
+        }
+        
+        @if length($category) == 3 {
+          background: -webkit-linear-gradient(nth($category, 1), nth($category, 2), nth($category, 3)); 
+          -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
+        }
+        @if length($category) == 4 {
+           background: -webkit-linear-gradient(nth($category, 1), nth($category, 2), nth($category, 3), nth($category, 4));
+           -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
+        }
+
+        //et cetera
+  }
 }

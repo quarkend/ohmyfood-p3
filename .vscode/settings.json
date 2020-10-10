@@ -1,14 +1,14 @@
 {
     
-        "name": " h m ",
+        "name": "",
         "version": "1.0.0",
-        "description": " web portfolio",
+        "description": "",
         "main": "index.js",
         "scripts": {
           "sass": "sass ./sass/main.scss:./Documents/Fichiers/Git/PremierProjet/ohmyfood-p3/css/style.css -w --style compressed",
           "prefix": "postcss ./Documents/Fichiers/Git/PremierProjet/ohmyfood-p3/css/style.css --use autoprefixer -d ./Documents/Fichiers/Git/PremierProjet/ohmyfood-p3/css/prefixed/"
         },
-        "author": "",
+        "author": "  ",
         "license": "ISC",
         "browserslist": "last 4 versions",
         "liveServer.settings.port": 5501

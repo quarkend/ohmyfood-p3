@@ -9,15 +9,7 @@ $body-bkg: rgb(255, 255, 255);
 $box-shadow-menu: 0 0 10px rgba(0, 0, 0, 0.247);
 // CHIC
 $chic-bkg-color: rgb(255, 245, 254);
-$chic-color: rgb(199, 116, 18);
-$chic-gradient-color1: rgb(199, 116, 18);
-$chic-gradient-color2: rgb(172, 107, 175);
-$chic-gradient-color3: rgb(147, 74, 248);
-$deg: (0deg);
-// gout
-$color4:rgb(0, 255, 42);
-$color5:rgba(157, 255, 0, 0.863);
-$color6:rgba(2, 85, 22, 0.808);
+
 $menu-colors: (
   note:(
   color: #3d1319,
@@ -67,7 +59,7 @@ $menu-variations: (
   ),
   chic: (
     background-color: #fff5fe,
-    text-color-p: #3d1319,
+    text-color-p:( #0005de, #12dfff),
     text-color-h3: #c67412,
     font-family-p: (
       "croissant one",
@@ -113,3 +105,11 @@ $menu-variations: (
     font-size-h3: 40px,
   ),
 );
+$colors-category01: ( 0deg, #3d1319,#ac3e3e , #f6916a );
+$colors-category02: (0deg,rgb(119, 43, 224), rgb(199, 116, 18) ),rgb(199, 116, 18);
+$colors-category03: ( 0deg, #0229dd, #0665f0, #0889fb);
+$colors-category04: (0deg, #00ff2a, rgba(157, 255, 0, 0.863), rgba(2, 85, 22, 0.808));
+
+$color-categories: $colors-category01, $colors-category02, $colors-category03, $colors-category04;
+
+
