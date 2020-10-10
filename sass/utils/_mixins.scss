@@ -6,23 +6,18 @@
 }
 // Mixin to manage responsive breakpoints
 @mixin respond-to($breakpoint) {
-  // If the key exists in the map
+  // si la valeur n existe pas dans la map
   @if map-has-key($breakpoints, $breakpoint) {
     // Prints a media query based on the value
     @media #{inspect(map-get($breakpoints, $breakpoint))} {
       @content;
     }
   }
-  // If the key doesn't exist in the map
+  // si la valeur n existe pas dans la map
   @else {
     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
         + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
 }
  
-  // @mixin menu-style($font-size: initial, $text-align: center){
   
-    
-  //   font: $font-size ;
-  //   text-align: $text-align;
-  // }
