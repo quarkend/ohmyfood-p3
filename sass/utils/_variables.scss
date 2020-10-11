@@ -68,6 +68,9 @@ $menu-variations: (
     font-size-p: 40px,
     font-size-h2: 40px,
     font-size-h3: 40px,
+    couleur-debut-degrade: #3c1218,
+    couleur-fin-degrade: #3c1218,
+    color-h3:#3c1218  
     //
   ),
   chic: (
@@ -83,6 +86,9 @@ $menu-variations: (
     ),
     font-size-p: 30px,
     font-size-h3: 35px,
+    couleur-debut-degrade: orange,
+    couleur-fin-degrade: violet ,
+    color-h3: orange 
   ),
   delice-papilles: (
     background-color: #edefef,
@@ -98,6 +104,9 @@ $menu-variations: (
     ),
     font-size-p: 40px,
     font-size-h3: 40px,
+    couleur-debut-degrade: blue,
+    couleur-fin-degrade: rgb(13, 125, 253),
+    color-h3:blue 
   ),
   palette-gout: (
     background-color: #fdfffd,
@@ -113,19 +122,22 @@ $menu-variations: (
     ),
     font-size-p: 40px,
     font-size-h3: 40px,
+    couleur-debut-degrade: green,
+    couleur-fin-degrade: rgb(142, 238, 142),
+    color-h3:green 
   ),
 );
-// la boucle @each avec  index ; les variables ou il y une liste de coleurs 
-$colors-category01: (0deg, #3d1319, #ac3e3e, #f6916a);
-$colors-category02: (0deg, rgb(119, 43, 224), rgb(199, 116, 18)),
-  rgb(199, 116, 18);
-$colors-category03: (0deg, #0229dd, #0665f0, #0889fb);
-$colors-category04: (
-  0deg,
-  #00ff2a,
-  rgba(157, 255, 0, 0.863),
-  rgba(2, 85, 22, 0.808)
-);
+// // la boucle @each avec  index ; les variables ou il y une liste de coleurs 
+// $colors-category01: (0deg, #3d1319, #ac3e3e, #f6916a);
+// $colors-category02: (0deg, rgb(119, 43, 224), rgb(199, 116, 18)),
+//   rgb(199, 116, 18);
+// $colors-category03: (0deg, #0229dd, #0665f0, #0889fb);
+// $colors-category04: (
+//   0deg,
+//   #00ff2a,
+//   rgba(157, 255, 0, 0.863),
+//   rgba(2, 85, 22, 0.808)
+// );
 
-$color-categories: $colors-category01, $colors-category02, $colors-category03,
-  $colors-category04;
+// $color-categories: $colors-category01, $colors-category02, $colors-category03,
+//   $colors-category04;

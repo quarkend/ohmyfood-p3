@@ -299,13 +299,14 @@ footer a {
 .menu--enchantee p {
   font-family: "Devonshire", cursive, sans-serif;
   font-size: 40px;
-}
-.menu--enchantee h2 {
-  font-size: 40px;
+  background: -webkit-linear-gradient(45deg, #3c1218, #3c1218);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu--enchantee h3 {
   font-family: "Handlee", cursive, sans-serif;
   font-size: 40px;
+  color: #3c1218;
 }
 .menu--chic {
   background-color: #fff5fe;
@@ -313,10 +314,14 @@ footer a {
 .menu--chic p {
   font-family: "croissant one";
   font-size: 30px;
+  background: -webkit-linear-gradient(45deg, orange, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu--chic h3 {
   font-family: "Croissant One", cursive, sans-serif;
   font-size: 35px;
+  color: orange;
 }
 .menu--delice-papilles {
   background-color: #edefef;
@@ -324,10 +329,14 @@ footer a {
 .menu--delice-papilles p {
   font-family: "Dancing Script", cursive;
   font-size: 40px;
+  background: -webkit-linear-gradient(45deg, blue, #0d7dfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu--delice-papilles h3 {
   font-family: "Handlee", cursive, sans-serif;
   font-size: 40px;
+  color: blue;
 }
 .menu--palette-gout {
   background-color: #fdfffd;
@@ -335,10 +344,14 @@ footer a {
 .menu--palette-gout p {
   font-family: "Dancing Script", cursive;
   font-size: 40px;
+  background: -webkit-linear-gradient(45deg, green, #8eee8e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu--palette-gout h3 {
   font-family: "Handlee", cursive, sans-serif;
   font-size: 40px;
+  color: green;
 }
 .menu__cover {
   width: 40%;
@@ -427,48 +440,57 @@ footer a {
   font-weight: bold;
 }
 
-.category01 {
-  background: -webkit-linear-gradient(0deg, #3d1319, #ac3e3e, #f6916a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.category02 {
-  background: -webkit-linear-gradient(0deg, #772be0, #c77412, #c77412);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.category03 {
-  background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.category04 {
-  background: -webkit-linear-gradient(0deg, #00ff2a, rgba(157, 255, 0, 0.863), rgba(2, 85, 22, 0.808));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.all-menus--note {
+.menus__note {
   background: #fcdfdb;
   font-family: "Devonshire", cursive, sans-serif;
 }
-.all-menus--note h2 {
+.menus__note h2 {
   color: #3d1319;
 }
-.all-menus--note--chic {
+
+.menus__chic {
   background: #fff5fe;
 }
-.all-menus--note--chic--papilles {
+.menus__chic h2 {
+  background: -webkit-linear-gradient(45deg, orange, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menus__papilles {
   background-color: #edefef;
 }
-.all-menus--note--chic--papilles p {
+.menus__papilles p {
   color: #20201d;
 }
-.all-menus--note--chic--gout {
+.menus__papilles h2 {
+  background: -webkit-linear-gradient(45deg, blue, #0d7dfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menus__gout {
   font-family: "Kaushan Script", cursive;
+}
+.menus__gout h2 {
+  background: -webkit-linear-gradient(45deg, green, #8eee8e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu--enchantee img {
+  width: 4em;
+}
+
+.top-title img {
+  width: 4em;
+}
+
+.last-title img {
+  width: 3em;
+}
+.last-title span {
+  font-size: 2em;
 }
 
 .menu--enchantee img {
