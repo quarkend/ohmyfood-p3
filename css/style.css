@@ -508,6 +508,30 @@ footer a {
   font-size: 2em;
 }
 
+.notion-legal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0em 13em 0 13em;
+}
+@media (min-width: 2000px) {
+  .notion-legal {
+    font-size: 2.5em;
+  }
+}
+.notion-legal h1 {
+  text-align: center;
+  color: lightsalmon;
+}
+.notion-legal h2 {
+  padding: 20px 0;
+  text-align: center;
+  color: yellowgreen;
+}
+.notion-legal p {
+  font-size: 1.1rem;
+}
+
 .card {
   min-height: 500px;
   display: flex;
@@ -537,25 +561,6 @@ footer a {
     width: 80%;
     text-align: center;
   }
-}
-
-.notion-legal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0em 13em 0 13em;
-}
-.notion-legal h1 {
-  text-align: center;
-  color: lightsalmon;
-}
-.notion-legal h2 {
-  padding: 20px 0;
-  text-align: center;
-  color: yellowgreen;
-}
-.notion-legal p {
-  font-size: 1.1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

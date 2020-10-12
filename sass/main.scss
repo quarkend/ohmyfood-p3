@@ -12,23 +12,3 @@
 @import "./components/card";
 @import "./components/container";
 
-.notion-legal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0em 13em 0 13em;
-
-  h1 {
-    text-align: center;
-    color: lightsalmon;
-  }
-  h2 {
-    padding: 20px 0;
-    text-align: center;
-    color: yellowgreen;
-  }
-
-  p {
-    font-size: 1.1rem;
-  }
-}
