@@ -114,75 +114,9 @@
   }
 }
 
-// @each $category in $color-categories {
-//   $i: index($color-categories, $category);
-//   .category0#{$i} {
-//     @if length($category) == 2 {
-//       background: -webkit-linear-gradient(nth($category, 1), nth($category, 2));
-//       -webkit-background-clip: text;
-//       -webkit-text-fill-color: transparent;
-//     }
-//     @if length($category) == 3 {
-//       background: -webkit-linear-gradient(
-//         nth($category, 1),
-//         nth($category, 2),
-//         nth($category, 3)
-//       );
-//       -webkit-background-clip: text;
-//       -webkit-text-fill-color: transparent;
-//     }
-//     @if length($category) == 4 {
-//       background: -webkit-linear-gradient(
-//         nth($category, 1),
-//         nth($category, 2),
-//         nth($category, 3),
-//         nth($category, 4)
-//       );
-//       -webkit-background-clip: text;
-//       -webkit-text-fill-color: transparent;
-//     }
 
-//boucle liner gradient
-//   }
-// }
 //all menu
-// .all-menus--note {
-//   background: #fcdfdb;
-//   font-family: "Devonshire", cursive, sans-serif;
-//   h2 {
-//     background: -webkit-linear-gradient(45deg, orange, violet);
-//     -webkit-background-clip: text;
-//     -webkit-text-fill-color: transparent;
-//   }
-//   &--chic {
-//     background: #fff5fe;
-//     h2 {
-//       background: -webkit-linear-gradient(45deg, orange, violet);
-//       -webkit-background-clip: text;
-//       -webkit-text-fill-color: transparent;
-//     }
-//     &--papilles {
-//       background-color: #edefef;
-//       h2 {
-//         background: -webkit-linear-gradient(45deg, blue, #0d7dfd);
-//         -webkit-background-clip: text;
-//         -webkit-text-fill-color: transparent;
-//       }
 
-//       p {
-//         color: rgb(32, 32, 29);
-//       }
-//       &--gout {
-//         font-family: "Kaushan Script", cursive;
-//         h2 {
-//           background: -webkit-linear-gradient(45deg, green, #8eee8e);
-//           -webkit-background-clip: text;
-//           -webkit-text-fill-color: transparent;
-//         }
-//       }
-//     }
-//   }
-// }
 .menus__note {
   background: #fcdfdb;
   font-family: "Devonshire", cursive, sans-serif;
@@ -199,7 +133,7 @@
 {
   background: #fff5fe;
   h2 {
-          background: -webkit-linear-gradient(45deg, orange, violet);
+          background: -webkit-linear-gradient(45deg,#c77412, #934af8);
           -webkit-background-clip: text;
            -webkit-text-fill-color: transparent;
        }
@@ -215,7 +149,7 @@
   }
 
   h2 {
-            background: -webkit-linear-gradient(45deg, blue, #0d7dfd);
+            background: -webkit-linear-gradient(45deg, #0229dd, #0889fb);
         -webkit-background-clip: text;
          -webkit-text-fill-color: transparent;
       }
@@ -227,7 +161,7 @@
 .menus__gout {
   font-family: "Kaushan Script", cursive;
   h2 {
-              background: -webkit-linear-gradient(45deg, green, #8eee8e);
+              background: -webkit-linear-gradient(45deg, #3e923a,#beff7f);
                -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
            }

@@ -54,12 +54,11 @@ $menu-colors: (
 $menu-variations: (
   enchantee: (
     background-color: #fcdfdb,
-    font-family-p:
-      (
-        "Devonshire",
-        cursive,
-        sans-serif,
-      ),
+    font-family-p: (
+      "Devonshire",
+      cursive,
+      sans-serif,
+    ),
     font-family-h3: (
       "Handlee",
       cursive,
@@ -70,15 +69,13 @@ $menu-variations: (
     font-size-h3: 40px,
     couleur-debut-degrade: #3c1218,
     couleur-fin-degrade: #3c1218,
-    color-h3:#3c1218  
-    //
+    color-h3: #3c1218 //,
   ),
   chic: (
     background-color: #fff5fe,
-    font-family-p:
-      (
-        "croissant one",
-      ),
+    font-family-p: (
+      "croissant one",
+    ),
     font-family-h3: (
       "Croissant One",
       cursive,
@@ -86,17 +83,16 @@ $menu-variations: (
     ),
     font-size-p: 30px,
     font-size-h3: 35px,
-    couleur-debut-degrade: orange,
-    couleur-fin-degrade: violet ,
-    color-h3: orange 
+    couleur-debut-degrade: #c77412,
+    couleur-fin-degrade: #934af8,
+    color-h3: #c77412,
   ),
   delice-papilles: (
     background-color: #edefef,
-    font-family-p:
-      (
-        "Dancing Script",
-        cursive,
-      ),
+    font-family-p: (
+      "Dancing Script",
+      cursive,
+    ),
     font-family-h3: (
       "Handlee",
       cursive,
@@ -104,17 +100,16 @@ $menu-variations: (
     ),
     font-size-p: 40px,
     font-size-h3: 40px,
-    couleur-debut-degrade: blue,
-    couleur-fin-degrade: rgb(13, 125, 253),
-    color-h3:blue 
+    couleur-debut-degrade:  #0229dd,
+    couleur-fin-degrade: #0889fb,
+    color-h3: #0889fb,
   ),
   palette-gout: (
     background-color: #fdfffd,
-    font-family-p:
-      (
-        "Dancing Script",
-        cursive,
-      ),
+    font-family-p: (
+      "Dancing Script",
+      cursive,
+    ),
     font-family-h3: (
       "Handlee",
       cursive,
@@ -122,22 +117,8 @@ $menu-variations: (
     ),
     font-size-p: 40px,
     font-size-h3: 40px,
-    couleur-debut-degrade: green,
+    couleur-debut-degrade: #3e923a,
     couleur-fin-degrade: rgb(142, 238, 142),
-    color-h3:green 
+    color-h3:#72bf56,
   ),
 );
-// // la boucle @each avec  index ; les variables ou il y une liste de coleurs 
-// $colors-category01: (0deg, #3d1319, #ac3e3e, #f6916a);
-// $colors-category02: (0deg, rgb(119, 43, 224), rgb(199, 116, 18)),
-//   rgb(199, 116, 18);
-// $colors-category03: (0deg, #0229dd, #0665f0, #0889fb);
-// $colors-category04: (
-//   0deg,
-//   #00ff2a,
-//   rgba(157, 255, 0, 0.863),
-//   rgba(2, 85, 22, 0.808)
-// );
-
-// $color-categories: $colors-category01, $colors-category02, $colors-category03,
-//   $colors-category04;
