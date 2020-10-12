@@ -539,4 +539,23 @@ footer a {
   }
 }
 
+.notion-legal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0em 13em 0 13em;
+}
+.notion-legal h1 {
+  text-align: center;
+  color: lightsalmon;
+}
+.notion-legal h2 {
+  padding: 20px 0;
+  text-align: center;
+  color: yellowgreen;
+}
+.notion-legal p {
+  font-size: 1.1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
