@@ -115,7 +115,7 @@
   @each $modificateur-name, $variation in $menu-variations {
     &--#{$modificateur-name} {
       background-color: map-get($variation, background-color);
-      font-family: map-get($variation, font-family-p);
+    
       h2 { 
         margin-top: 0;
         font-family: map-get($variation, font-family-h2);
@@ -126,6 +126,9 @@
         );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+      }
+      p,h3{
+        font-family: map-get($variation, font-family-h3);
       }
     }
   }
