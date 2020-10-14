@@ -25,7 +25,12 @@ $body-bkg: rgb(255, 255, 255);
 $box-shadow-menu: 0 0 10px rgba(0, 0, 0, 0.247);
 
 $menu-colors: (
+
+
+  
   note: (
+
+
     color: #3d1319,
   ),
   one: (
@@ -37,21 +42,11 @@ $menu-colors: (
   tree: (
     color: rgb(147, 74, 248),
   ),
-  for: (
-    color: blue,
-  ),
-  five: (
-    color: rgb(0, 89, 255),
-  ),
-  six: (
-    color: rgb(0, 153, 255),
-  ),
-  gout: (
-    color: rgb(8, 8, 8),
-  ),
+ 
 );
 
 $menu-variations: (
+  
   enchantee: (
     background-color: #fcdfdb,
     font-family-p: (
@@ -71,7 +66,8 @@ $menu-variations: (
     couleur-fin-degrade: #3c1218,
     color-h3: #3c1218 //,
   ),
-  chic: (
+  chic:
+   (
     background-color: #fff5fe,
     font-family-p: (
       "croissant one",
@@ -107,8 +103,7 @@ $menu-variations: (
   palette-gout: (
     background-color: #fdfffd,
     font-family-p: (
-      "Dancing Script",
-      cursive,
+      "Kaushan Script", cursive,
     ),
     font-family-h3: (
       "Handlee",
@@ -122,3 +117,4 @@ $menu-variations: (
     color-h3:#72bf56,
   ),
 );
+ 

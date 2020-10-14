@@ -22,21 +22,8 @@
   @include respond-to("small") {
     margin: 0em 1em 10em 1em;
   }
-
-  h3 {
-    position: relative;
-
-    &:after {
-      content: "";
-      position: absolute;
-      width: 0%;
-      height: 4px;
-      display: block;
-      transition: width 500ms ease;
-    }
-    &:hover:after {
-      width: 100%;
-    }
+  &--enchantee img {
+    width: 4em;
   }
 
   @each $modificateur-name, $variation in $menu-variations {
@@ -72,10 +59,6 @@
     @each $modificateur-name, $color in $menu-colors {
       &--#{$modificateur-name} {
         color: map-get($color, color);
-
-        h3::after {
-          background-color: map-get($color, color);
-        }
       }
     }
   }
@@ -91,7 +74,7 @@
       margin-bottom: auto;
     }
     img {
-      width: 35%;
+      width: 30%;
       overflow: hidden;
       margin: 1 0em;
     }
@@ -114,95 +97,71 @@
   }
 }
 
+// all menus
 
-//all menu
+.menus {
+  h3 {
+    position: relative;
 
-.menus__note {
-  background: #fcdfdb;
-  font-family: "Devonshire", cursive, sans-serif;
-  h2{
-    color: #3d1319;
-  }
- 
-}
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 4px;
+      display: block;
+      transition: width 500ms ease;
+    }
 
-
-
-//Menu chic
-.menus__chic
-{
-  background: #fff5fe;
-  h2 {
-          background: -webkit-linear-gradient(45deg,#c77412, #934af8);
-          -webkit-background-clip: text;
-           -webkit-text-fill-color: transparent;
-       }
-}
-
-
-//// menu--papilles
-.menus__papilles {
-  background-color: #edefef;
-  
-  p {
-    color: rgb(32, 32, 29);
+    &:hover:after {
+      width: 100%;
+      background-color: black;
+    }
   }
 
-  h2 {
-            background: -webkit-linear-gradient(45deg, #0229dd, #0889fb);
-        -webkit-background-clip: text;
-         -webkit-text-fill-color: transparent;
+  @each $modificateur-name, $variation in $menu-variations {
+    &--#{$modificateur-name} {
+      background-color: map-get($variation, background-color);
+
+      p,
+      h2,
+      h3,
+      span {
+        font-family: map-get($variation, font-family-p);
       }
+      h2 {
+        background: -webkit-linear-gradient(
+          45deg,
+          map-get($variation, couleur-debut-degrade),
+          map-get($variation, couleur-fin-degrade)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
 }
-
-
-//PALETTE DU GOU
-
-.menus__gout {
-  font-family: "Kaushan Script", cursive;
-  h2 {
-              background: -webkit-linear-gradient(45deg, #3e923a,#beff7f);
-               -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-           }
-} 
 
 //icon music
-.menu--enchantee img {
-  width: 4em;
-}
+
 .top-title img {
   width: 4em;
 }
 .last-title {
   img {
     width: 3em;
-  }
-  span {
-    font-size: 2em;
-  }
-}
-//icon music
-.menu--enchantee img {
-  width: 4em;
-}
-.top-title img {
-  width: 4em;
-}
-.last-title {
-  img {
-    width: 3em;
-  }
-  span {
-    font-size: 2em;
+
+    span {
+      font-size: 2em;
+    }
   }
 }
+
 
 .notion-legal {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0em 13em 0 13em;
+  margin: auto;
   @include respond-to("x-large") {
     font-size: 2.5em;
   }
@@ -221,4 +180,3 @@
     font-size: 1.1rem;
   }
 }
-
