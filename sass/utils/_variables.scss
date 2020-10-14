@@ -25,12 +25,7 @@ $body-bkg: rgb(255, 255, 255);
 $box-shadow-menu: 0 0 10px rgba(0, 0, 0, 0.247);
 
 $menu-colors: (
-
-
-  
   note: (
-
-
     color: #3d1319,
   ),
   orange: (
@@ -42,14 +37,17 @@ $menu-colors: (
   violet: (
     color: rgb(147, 74, 248),
   ),
- 
 );
 
 $menu-variations: (
-  
   enchantee: (
     background-color: #fcdfdb,
     font-family-p: (
+      "Handlee",
+      cursive,
+      sans-serif,
+    ),
+    font-family-h2: (
       "Devonshire",
       cursive,
       sans-serif,
@@ -64,10 +62,9 @@ $menu-variations: (
     font-size-h3: 40px,
     couleur-debut-degrade: #3c1218,
     couleur-fin-degrade: #3c1218,
-    color-h3: #3c1218 //,
+    color-h3: #3c1218 //,,
   ),
-  chic:
-   (
+  chic: (
     background-color: #fff5fe,
     font-family-p: (
       "croissant one",
@@ -96,14 +93,15 @@ $menu-variations: (
     ),
     font-size-p: 40px,
     font-size-h3: 40px,
-    couleur-debut-degrade:  #0229dd,
+    couleur-debut-degrade: #0229dd,
     couleur-fin-degrade: #0889fb,
     color-h3: #0889fb,
   ),
   palette-gout: (
     background-color: #fdfffd,
     font-family-p: (
-      "Kaushan Script", cursive,
+      "Kaushan Script",
+      cursive,
     ),
     font-family-h3: (
       "Handlee",
@@ -114,7 +112,6 @@ $menu-variations: (
     font-size-h3: 40px,
     couleur-debut-degrade: #3e923a,
     couleur-fin-degrade: rgb(142, 238, 142),
-    color-h3:#72bf56,
+    color-h3: #72bf56,
   ),
 );
- 

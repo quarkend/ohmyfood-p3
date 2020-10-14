@@ -286,7 +286,7 @@ footer a {
   background-color: #fcdfdb;
 }
 .menu--enchantee p {
-  font-family: "Devonshire", cursive, sans-serif;
+  font-family: "Handlee", cursive, sans-serif;
   font-size: 40px;
   background: -webkit-linear-gradient(45deg, #3c1218, #3c1218);
   -webkit-background-clip: text;
@@ -410,56 +410,41 @@ footer a {
 }
 .menus--enchantee {
   background-color: #fcdfdb;
-}
-.menus--enchantee p,
-.menus--enchantee h2,
-.menus--enchantee h3,
-.menus--enchantee span {
-  font-family: "Devonshire", cursive, sans-serif;
+  font-family: "Handlee", cursive, sans-serif;
 }
 .menus--enchantee h2 {
+  margin-top: 0;
+  font-family: "Devonshire", cursive, sans-serif;
   background: -webkit-linear-gradient(45deg, #3c1218, #3c1218);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menus--chic {
   background-color: #fff5fe;
-}
-.menus--chic p,
-.menus--chic h2,
-.menus--chic h3,
-.menus--chic span {
   font-family: "croissant one";
 }
 .menus--chic h2 {
+  margin-top: 0;
   background: -webkit-linear-gradient(45deg, #c77412, #934af8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menus--delice-papilles {
   background-color: #edefef;
-}
-.menus--delice-papilles p,
-.menus--delice-papilles h2,
-.menus--delice-papilles h3,
-.menus--delice-papilles span {
   font-family: "Dancing Script", cursive;
 }
 .menus--delice-papilles h2 {
+  margin-top: 0;
   background: -webkit-linear-gradient(45deg, #0229dd, #0889fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menus--palette-gout {
   background-color: #fdfffd;
-}
-.menus--palette-gout p,
-.menus--palette-gout h2,
-.menus--palette-gout h3,
-.menus--palette-gout span {
   font-family: "Kaushan Script", cursive;
 }
 .menus--palette-gout h2 {
+  margin-top: 0;
   background: -webkit-linear-gradient(45deg, #3e923a, #8eee8e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -469,11 +454,14 @@ footer a {
   width: 4em;
 }
 
-.last-title img {
-  width: 3em;
+.last-title {
+  margin-top: 5em;
 }
-.last-title img span {
-  font-size: 2em;
+.last-title img {
+  width: 4em;
+}
+.last-title span {
+  font-size: 1.4em;
 }
 
 .notion-legal {
