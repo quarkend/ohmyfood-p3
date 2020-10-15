@@ -61,10 +61,13 @@
     }
   }
   &__step {
+      @include respond-to("small") {
+    font-size: 1.4em;
+  }
     display: flex;
     flex-direction: column;
     font-size: 1.6em;
-    span {
+    header {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -83,18 +86,16 @@
     }
     &__dishes {
       padding: 0 3em 0 3em;
+    
       @include respond-to("mini") {
         padding: 0em;
       }
-    }
-    .price {
-      margin-top: 4px;
-      font-weight: bold;
     }
   }
 }
 // all menus
 .menus {
+
   h3 {
     position: relative;
     &:after {
@@ -106,7 +107,7 @@
       transition: width 500ms ease;
     }
 
-    &:hover:after {
+:after {
       width: 100%;
       background-color: black;
     }
@@ -133,7 +134,7 @@
     }
   }
 }
-//icon music
+//icon music pour le menu enchantee
 .top-title img {
   width: 4em;
 }
@@ -149,25 +150,25 @@
   }
 
 //Mention legal
-.notion-legal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  @include respond-to("x-large") {
-    font-size: 2.5em;
-  }
-  h1 {
-    text-align: center;
-    color: lightsalmon;
-  }
-  h2 {
-    padding: 20px 0;
-    text-align: center;
-    color: yellowgreen;
-  }
+// .notion-legal {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   margin: auto;
+//   @include respond-to("x-large") {
+//     font-size: 2.5em;
+//   }
+//   h1 {
+//     text-align: center;
+//     color: lightsalmon;
+//   }
+//   h2 {
+//     padding: 20px 0;
+//     text-align: center;
+//     color: yellowgreen;
+//   }
 
-  p {
-    font-size: 1.1rem;
-  }
-}
+//   p {
+//     font-size: 1.1rem;
+//   }
+// }
