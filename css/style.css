@@ -175,12 +175,12 @@ footer a {
   color: #fec85f;
   font-family: "roboto", sans-serif;
   font-size: 1.6rem;
+  padding: 0 1em 0 1em;
 }
 @media (max-width: 767px) {
   footer a {
     font-size: 1.4rem;
     line-height: 0em;
-    padding: 0 8px 0px 8px;
   }
 }
 
@@ -407,7 +407,6 @@ footer a {
 .menu__step img {
   width: 30%;
   overflow: hidden;
-  margin: 1 0em;
 }
 .menu__step p {
   margin-bottom: 8px;

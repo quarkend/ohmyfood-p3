@@ -16,10 +16,11 @@ footer {
     color: #fec85f;
     font-family: "roboto", sans-serif;
     font-size: 1.6rem;
+    padding: 0 1em 0 1em;
     @include respond-to("small") {
       font-size: 1.4rem;
      line-height: 0em;
-     padding: 0 8px 0px 8px;
+     
     }
   }
 }
