@@ -1,7 +1,9 @@
 /* breakpoint*/
-.menu__cover div:hover {
-  transform: scale(1.2);
+.menu__cover header {
   transition: transform 0.6s ease-in-out;
+}
+.menu__cover:hover header {
+  transform: scale(1.2);
   opacity: 0.5;
 }
 
@@ -283,6 +285,21 @@ footer a {
 .menu--enchantee img {
   width: 4em;
 }
+.menu h3 {
+  position: relative;
+}
+.menu h3:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 4px;
+  display: block;
+  transition: width 500ms ease;
+  background-color: black;
+}
+.menu h3:hover:after {
+  width: 100%;
+}
 .menu--enchantee {
   background-color: #fcdfdb;
 }
@@ -350,14 +367,26 @@ footer a {
 .menu__detail--note {
   color: #3d1319;
 }
+.menu__detail--note h3::after {
+  background-color: #3d1319;
+}
 .menu__detail--orange {
   color: #c77412;
+}
+.menu__detail--orange h3::after {
+  background-color: #c77412;
 }
 .menu__detail--rose {
   color: #ac6baf;
 }
+.menu__detail--rose h3::after {
+  background-color: #ac6baf;
+}
 .menu__detail--violet {
   color: #934af8;
+}
+.menu__detail--violet h3::after {
+  background-color: #934af8;
 }
 .menu__step {
   display: flex;
@@ -395,21 +424,6 @@ footer a {
   }
 }
 
-.menus h3 {
-  position: relative;
-}
-.menus h3:after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 4px;
-  display: block;
-  transition: width 500ms ease;
-}
-.menus h3 :after {
-  width: 100%;
-  background-color: black;
-}
 .menus--enchantee {
   background-color: #fcdfdb;
 }

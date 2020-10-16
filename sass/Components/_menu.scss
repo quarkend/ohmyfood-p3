@@ -26,6 +26,24 @@
   &--enchantee img {
     width: 4em;
   }
+
+  h3 {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 4px;
+      display: block;
+      transition: width 500ms ease;
+     background-color: black;
+    }
+    &:hover:after {
+      width: 100%;
+    }
+  }
+
   @each $modificateur-name, $variation in $menu-variations {
     &--#{$modificateur-name} {
       background-color: map-get($variation, background-color);
@@ -57,7 +75,12 @@
     @each $modificateur-name, $color in $menu-colors {
       &--#{$modificateur-name} {
         color: map-get($color, color);
+        h3::after {
+          background-color: map-get($color, color);
+        }
+   
       }
+      
     }
   }
   &__step {
@@ -72,6 +95,7 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: auto;
+
     }
     img {
       width: 30%;
@@ -96,22 +120,6 @@
 // all menus
 .menus {
 
-  h3 {
-    position: relative;
-    &:after {
-      content: "";
-      position: absolute;
-      width: 0%;
-      height: 4px;
-      display: block;
-      transition: width 500ms ease;
-    }
-
-:after {
-      width: 100%;
-      background-color: black;
-    }
-  }
 
   @each $modificateur-name, $variation in $menu-variations {
     &--#{$modificateur-name} {
