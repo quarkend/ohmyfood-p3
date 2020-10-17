@@ -257,12 +257,13 @@ footer a {
   }
 }
 .page h2 {
-  font-size: 3em;
+  font-size: 2.8em;
 }
 @media (max-width: 320px) {
   .page h2 {
     font-size: 1.3rem;
     margin-top: 0em;
+    font-size: 2em;
   }
 }
 
