@@ -121,12 +121,12 @@
 // all menus
 .menus {
 
-
   @each $modificateur-name, $variation in $menu-variations {
     &--#{$modificateur-name} {
       background-color: map-get($variation, background-color);
       @supports  (-webkit-background-clip: text) {
       h2 { 
+        font-family: map-get($variation, font-family-p);
         margin-top: 0;
         font-family: map-get($variation, font-family-h2);
         background: -webkit-linear-gradient(

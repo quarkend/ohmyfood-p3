@@ -429,6 +429,7 @@ footer a {
 }
 @supports (-webkit-background-clip: text) {
   .menus--enchantee h2 {
+    font-family: "Devonshire", cursive, sans-serif;
     margin-top: 0;
     font-family: "Devonshire", cursive, sans-serif;
     background: -webkit-linear-gradient(45deg, #3c1218, #3c1218);
@@ -444,6 +445,7 @@ footer a {
 }
 @supports (-webkit-background-clip: text) {
   .menus--chic h2 {
+    font-family: "croissant one";
     margin-top: 0;
     background: -webkit-linear-gradient(45deg, #c77412, #934af8);
     -webkit-background-clip: text;
@@ -458,6 +460,7 @@ footer a {
 }
 @supports (-webkit-background-clip: text) {
   .menus--delice-papilles h2 {
+    font-family: "Dancing Script", cursive;
     margin-top: 0;
     background: -webkit-linear-gradient(45deg, #0229dd, #0889fb);
     -webkit-background-clip: text;
@@ -472,6 +475,7 @@ footer a {
 }
 @supports (-webkit-background-clip: text) {
   .menus--palette-gout h2 {
+    font-family: "Kaushan Script", cursive;
     margin-top: 0;
     background: -webkit-linear-gradient(45deg, #3e923a, #8eee8e);
     -webkit-background-clip: text;
