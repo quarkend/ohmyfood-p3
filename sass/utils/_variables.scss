@@ -1,7 +1,7 @@
 /* breakpoint*/
 $breakpoints: (
   "mini": (
-    max-width: 320px,
+    max-width: 340px,
   ),
   "small": (
     max-width: 767px,
@@ -28,13 +28,13 @@ $menu-colors: (
   note: (
     color: #3d1319,
   ),
-  orange: (
+  "orange": (
     color: rgb(199, 116, 18),
   ),
-  rose: (
+  "rose": (
     color: rgb(172, 107, 175),
   ),
-  violet: (
+  "violet": (
     color: rgb(147, 74, 248),
   ),
 );
