@@ -156,30 +156,11 @@
     }
       span {
         font-size: 1.4em;
+        font-family: "Devonshire",
+        cursive,
+        sans-serif,;
       }
     
   }
 
-//Mention legal
-// .notion-legal {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   margin: auto;
-//   @include respond-to("x-large") {
-//     font-size: 2.5em;
-//   }
-//   h1 {
-//     text-align: center;
-//     color: lightsalmon;
-//   }
-//   h2 {
-//     padding: 20px 0;
-//     text-align: center;
-//     color: yellowgreen;
-//   }
 
-//   p {
-//     font-size: 1.1rem;
-//   }
-// }
